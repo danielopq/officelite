@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Main from './Main';
-import Footer from './Footer';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
 import './assets/css/index.css'
 
 
