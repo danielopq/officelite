@@ -1,0 +1,6 @@
+footer{
+    width: 1440px;
+    height: 603px;
+    margin: 0px;
+    background: var(--darkest-grey) url('../img/home/bg-pattern-footer.svg') -702px -614px/2036px no-repeat;
+}
