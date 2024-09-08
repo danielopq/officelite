@@ -8,3 +8,11 @@ footer{
     justify-content: flex-start;
     background: var(--darkest-grey) url('../../img/home/bg-pattern-footer.svg') -702px -614px/2036px no-repeat;
 }
+
+#footerDate{
+    width: inherit;
+    height: 48px;
+    font: 700 16px/48px 'KumbhSans-Bold';
+    letter-spacing: 5px;
+    border: solid 1px red;
+}
