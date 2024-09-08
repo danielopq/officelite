@@ -2,6 +2,7 @@
   --darkest-grey: #25293A; /*rgb(37,41,58) / hsl(229,22%,19%)*/
   --light-purple: #829CFF /*rgb(130, 156, 255) / hsl(228, 100%, 75%)*/;
   --dark-purple: #5175FF; /*rgb(81,117,255) / hsl(228,100%,66%) */
+  --dark-blue-med: #333950; /*rgb(51,57,80) / hsl(228,22%,26%) */
 }
 
 @font-face {
@@ -40,6 +41,8 @@ p{
 h1{
   margin: 0px;
   padding: 0px;
+  font: 700 56px/64px 'KumbhSans-Bold';
+  color: var(--dark-blue-med);
 }
 
 button{
