@@ -1,0 +1,22 @@
+#mainContent{
+    width: 100%;
+    height: auto;
+    margin-top: 102px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px red;
+}
+
+#mainContent-text{
+    width: 540px;
+    height: 388px;
+    border: solid 1px red;
+}
+
+#mainContent-img{
+    width: 475px;
+    height: 531px;
+    border: solid 1px red;
+}
