@@ -1,4 +1,5 @@
 :root {
+  --light-grey: #747B95; /*rgb(116,123,149) / hsl(227,13%,52%)*/
   --darkest-grey: #25293A; /*rgb(37,41,58) / hsl(229,22%,19%)*/
   --light-purple: #829CFF /*rgb(130, 156, 255) / hsl(228, 100%, 75%)*/;
   --dark-purple: #5175FF; /*rgb(81,117,255) / hsl(228,100%,66%) */
@@ -50,6 +51,11 @@ button{
   border-radius: 28px;
   cursor:pointer;
   font: 700 16px/28px 'KumbhSans-Bold';
+}
+
+.mainText{
+  font: 700 16px/28px 'KumbhSans-Bold';
+  color:var(--light-grey);
 }
 
 
