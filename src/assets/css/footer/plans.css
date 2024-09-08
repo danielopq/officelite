@@ -2,5 +2,67 @@
     width: 1110px;
     height: 508px;
     margin-top: -254px;
-    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#plans > p{
+    display:inline-flex;
+}
+
+#basicPlan,#ultimatePlan{
+    background-color: white;
+    color: var(--dark-blue-med);
+}
+
+#basicPlan .planFeature,#ultimatePlan .planFeature{
+    color: var(--light-grey);
+}
+
+
+
+
+
+#proPlan{
+    background: var(--dark-purple) url('../../img/home/bg-pattern-pricing.svg') 50% -379px/880px no-repeat;
+    color: white;
+}
+
+.planFrame > button{
+    margin-top: 16px;
+}
+
+.planFrame{
+    width: 350px;
+    height: 508px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+.planName{
+    height: 28px;
+    font: 700 20px/28px 'KumbhSans-Bold';
+}
+
+.planPrice{
+    height: 64px;
+    font: 700 56px/64px 'KumbhSans-Bold';
+    margin-top: 40px;
+}
+
+.userLimit{
+    height: 28px;
+    font: 700 16px/28px 'KumbhSans-Regular';
+    margin: 8px 0px 56px 0px;
+}
+
+.planFeature{
+    height: 28px;
+    font: 700 16px/28px 'KumbhSans-Regular';
+    margin-bottom: 16px;
 }
