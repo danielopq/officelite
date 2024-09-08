@@ -12,11 +12,29 @@
 #mainContent-text{
     width: 540px;
     height: 388px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     border: solid 1px red;
+}
+
+#mainContent-text h1{
+    width: inherit;
+    height: 192px;
+    margin-bottom: 24px;
+    border: solid 1px blue;
+}
+
+#mainContent-text p{
+    width: inherit;
+    height: 84px;
+    margin-bottom: 32px;
+    border: solid 1px blue;
 }
 
 #mainContent-img{
     width: 475px;
     height: 531px;
-    border: solid 1px red;
+    background: url('../../img/home/illustration-charts.svg') center/475px no-repeat;
+    border: solid 1px blue;
 }
