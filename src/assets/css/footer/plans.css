@@ -20,10 +20,6 @@
     color: var(--light-grey);
 }
 
-
-
-
-
 #proPlan{
     background: var(--dark-purple) url('../../img/home/bg-pattern-pricing.svg') 50% -379px/880px no-repeat;
     color: white;
@@ -42,6 +38,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 40px;
+    box-shadow: 0px 50px 50px -25px rgba(75,92,154,0.24);
 }
 
 .planName{
@@ -57,12 +54,12 @@
 
 .userLimit{
     height: 28px;
-    font: 700 16px/28px 'KumbhSans-Regular';
+    font: 400 16px/28px 'KumbhSans-Regular';
     margin: 8px 0px 56px 0px;
 }
 
 .planFeature{
     height: 28px;
-    font: 700 16px/28px 'KumbhSans-Regular';
+    font: 400 16px/28px 'KumbhSans-Regular';
     margin-bottom: 16px;
 }
