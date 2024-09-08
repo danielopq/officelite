@@ -4,6 +4,20 @@
   --dark-purple: #5175FF; /*rgb(81,117,255) / hsl(228,100%,66%) */
 }
 
+@font-face {
+	font-family: 'KumbhSans-Bold';
+	src: url("../../fonts/KumbhSans-Bold.woff")format('woff');
+	font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+	font-family: 'KumbhSans-Regular';
+	src: url("../../fonts/KumbhSans-Regular.woff")format('woff');
+	font-style: normal;
+  font-weight: 400;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -32,6 +46,7 @@ button{
   border: none;
   border-radius: 28px;
   cursor:pointer;
+  font: 700 16px/28px 'KumbhSans-Bold';
 }
 
 

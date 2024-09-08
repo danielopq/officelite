@@ -1,5 +1,5 @@
 import '../../assets/css/main/mainContent.css'
-import DefaultButton from '../commons/defaultButton';
+import DefaultButton from '../commons/DefaultButton';
 const MainContent = () => {
     return (
         <div id="mainContent">
