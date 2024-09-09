@@ -2,5 +2,15 @@
     width: 1110px;
     height: 176px;
     margin-top: 82px;
-    border: solid 1px red;
+}
+
+#footerCounter{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#footerCounter button{
+    margin-top: 12px;
 }

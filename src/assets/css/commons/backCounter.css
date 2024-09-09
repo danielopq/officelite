@@ -1,0 +1,33 @@
+#backCounter{
+    width: 448px;
+    height: 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lapse{
+    width: 100px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 13px;
+    padding-top: 16px;
+    background-color: var(--dark-blue-med);
+}
+
+.lapseNumber{
+    height:64px ;
+    display: inline-block;
+    font: 700 56px/64px 'KumbhSans-Bold';
+    color: white;
+}
+
+.lapseType{
+    height:64px ;
+    display: inline-block;
+    font: 700 16px/28px 'KumbhSans-Bold';
+    margin-top: 2px;
+    color: var(--light-grey);
+}

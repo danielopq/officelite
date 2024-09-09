@@ -1,9 +1,17 @@
 import '../../assets/css/footer/footerBotton.css';
-
+import DefaultButton from '../commons/DefaultButton';
+import BackCounter from '../commons/BackCounter';
 const FooterBotton = () => {
-    return(
+    return (
         <div id="footerBottom">
-            <div id="footerDate"><span style={{color: 'white'}}>Coming 4</span><span style={{color: '#5175FF'}}> Nov 2020</span></div>
+            <div id="footerDate">
+                <span style={{ color: 'white' }}>COMING 4</span>
+                <span style={{ color: '#5175FF' }}> NOV 2020</span>
+            </div>
+            <div id="footerCounter">
+                <BackCounter/>
+                <DefaultButton buttonType='getStarted'>Get Started</DefaultButton>
+            </div>
         </div>
     )
 }

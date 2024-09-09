@@ -14,5 +14,9 @@ footer{
     height: 48px;
     font: 700 16px/48px 'KumbhSans-Bold';
     letter-spacing: 5px;
-    border: solid 1px red;
+}
+
+#footerCounter{
+    width: inherit;
+    height: 128px;
 }
