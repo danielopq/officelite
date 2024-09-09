@@ -5,10 +5,6 @@ import BackCounter from '../../commons/BackCounter';
 const FooterBotton = () => {
     return (
         <div id="footerBottom">
-            <div id="footerDate">
-                <span style={{ color: 'white' }}>COMING 4</span>
-                <span style={{ color: '#5175FF' }}> NOV 2020</span>
-            </div>
             <div id="footerCounter">
                 <BackCounter/>
                 <DefaultButton buttonType='getStarted'>Get Started</DefaultButton>

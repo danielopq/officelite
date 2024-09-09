@@ -1,6 +1,6 @@
-import '../../../assets/css/home/main/homeMain.css';
-import Logo from './Logo';
-import DefaultButton from '../../commons/DefaultButton';
+import '../../assets/css/home/main/homeMain.css';
+import Logo from '../../components/commons/Logo';
+import DefaultButton from '../commons/DefaultButton';
 const HomeMain = () => {
     return (
         <main>

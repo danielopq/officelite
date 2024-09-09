@@ -54,7 +54,7 @@ button{
 }
 
 .mainText{
-  font: 700 16px/28px 'KumbhSans-Bold';
+  font: 400 18px/28px 'KumbhSans-Regular';
   color:var(--light-grey);
 }
 

@@ -1,0 +1,37 @@
+main{
+    width: 1440px;
+    height: 1024px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#mainContent{
+    width: 1020px;
+    height: inherit;
+    padding: 81px 0px 0px 155px;
+}
+
+#mainContent > *{
+    width: 540px;
+}
+
+#mainContent h1{
+    height: 128px;
+    margin-top: 154px;
+}
+
+#mainContent p{
+    height: 84px;
+    margin-top: 24px;
+}
+
+#backCounter{
+    margin-top: 40px;
+}
+
+#mainForm{
+    width: 420px;
+    height: inherit;
+    background: var(--darkest-grey) url('../../img/sign-up/bg-pattern-side.svg') 50% -786px/2036px no-repeat;
+}
