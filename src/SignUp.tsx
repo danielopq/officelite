@@ -1,6 +1,7 @@
 import '../src/assets/css/signUp/signUp.css';
 import Logo from './components/commons/Logo';
 import BackCounter from './components/commons/BackCounter';
+import SignUpForm from './components/sigUp/SignUpForm';
 const SignUp = () => {
     return (
         <main>
@@ -14,7 +15,9 @@ const SignUp = () => {
                 </p>
                 <BackCounter/>
             </div>
-            <div id="mainForm"></div>
+            <div id="mainForm">
+                <SignUpForm/>
+            </div>
         </main>
     )
 }
