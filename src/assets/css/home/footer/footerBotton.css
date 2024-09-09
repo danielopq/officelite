@@ -1,16 +1,12 @@
 #footerBottom{
     width: 1110px;
-    height: 176px;
+    height: 184px;
     margin-top: 82px;
-}
-
-#footerCounter{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
 }
 
-#footerCounter button{
+#footerBottom button{
     margin-top: 12px;
 }
