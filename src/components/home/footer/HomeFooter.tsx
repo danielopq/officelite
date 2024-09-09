@@ -1,7 +1,7 @@
-import '../../assets/css/footer/footer.css';
+import '../../../assets/css/home/footer/homeFooter.css';
 import Plans from './Plans';
 import FooterBotton from './FooterBottom';
-const Footer = () =>{
+const HomeFooter = () =>{
     return(
         <footer>
            <Plans/>
@@ -10,4 +10,4 @@ const Footer = () =>{
     )
 }
 
-export default Footer;
+export default HomeFooter;

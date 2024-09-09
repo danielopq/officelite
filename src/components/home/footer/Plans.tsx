@@ -1,5 +1,6 @@
-import '../../assets/css/footer/plans.css';
-import DefaultButton from '../commons/DefaultButton';
+import '../../../assets/css/home/footer/plans.css';
+import DefaultButton from '../../commons/DefaultButton';
+
 const Plans = () => {
     return (
         <div id="plans">
