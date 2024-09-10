@@ -33,5 +33,5 @@ main{
 #mainForm{
     width: 420px;
     height: inherit;
-    background: var(--darkest-grey) url('../../img/sign-up/bg-pattern-side.svg') 50% -786px/2036px no-repeat;
+    background: var(--darkest-grey) url('../../assets/img/sign-up/bg-pattern-side.svg') 50% -786px/2036px no-repeat;
 }
