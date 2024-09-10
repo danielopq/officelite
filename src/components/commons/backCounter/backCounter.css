@@ -12,6 +12,18 @@
     letter-spacing: 5px;
 }
 
+.comingLabelDark{
+    color: white;
+}
+
+.comingLabelLight{
+    color: var(--dark-blue-med);
+}
+
+#dateLabel{
+    color: var(--dark-purple);
+}
+
 #counter{
     width: inherit;
     height: 128px;
@@ -28,14 +40,28 @@
     align-items: center;
     border-radius: 13px;
     padding-top: 16px;
+}
+
+.lapseDark{
     background-color: var(--dark-blue-med);
+}
+
+.lapseLight{
+    background-color: var(--light-purple);
 }
 
 .lapseNumber{
     height:64px ;
     display: inline-block;
     font: 700 56px/64px 'KumbhSans-Bold';
+}
+
+.lapseNumberDark{
     color: white;
+}
+
+.lapseNumberLight{
+    color: var(--dark-purple)
 }
 
 .lapseType{
@@ -43,5 +69,12 @@
     display: inline-block;
     font: 700 16px/28px 'KumbhSans-Bold';
     margin-top: 2px;
+}
+
+.lapseTypeDark{
+    color: var(--light-grey);
+}
+
+.lapseTypeLight{
     color: var(--light-grey);
 }
