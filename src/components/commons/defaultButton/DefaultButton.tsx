@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/commons/defaultButton.css';
+import './defaultButton.css';
 
 type ButtonProps = {
     children: string;

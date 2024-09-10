@@ -1,5 +1,5 @@
-import '../../../assets/css/home/footer/plans.css';
-import DefaultButton from '../../commons/DefaultButton';
+import './plans.css';
+import DefaultButton from '../../../commons/defaultButton/DefaultButton';
 
 const Plans = () => {
     return (

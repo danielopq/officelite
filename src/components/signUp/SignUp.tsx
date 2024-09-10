@@ -1,6 +1,6 @@
 import './signUp.css';
-import Logo from '../commons/Logo';
-import BackCounter from '../commons/BackCounter';
+import Logo from '../commons/logo/Logo';
+import BackCounter from '../commons/backCounter/BackCounter';
 import SignUpForm from './SignUpForm/SignUpForm';
 const SignUp = () => {
     return (

@@ -1,6 +1,6 @@
-import '../../../assets/css/home/footer/footerBotton.css';
-import DefaultButton from '../../commons/DefaultButton';
-import BackCounter from '../../commons/BackCounter';
+import '.footerBotton.css';
+import DefaultButton from '../../../commons/defaultButton/DefaultButton';
+import BackCounter from '../../../commons/backCounter/BackCounter';
 const FooterBotton = () => {
     return (
         <div id="footerBottom">

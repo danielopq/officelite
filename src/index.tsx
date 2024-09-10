@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Home from './Home';
-import SignUp from './components/sigUp/SignUp';
+import Home from './components/home/Home';
+import SignUp from './components/signUp/SignUp';
 import './assets/css/index.css'
 
 

@@ -1,4 +1,4 @@
-import '../../assets/css/commons/backCounter.css';
+import '.backCounter.css';
 
 const BackCounter = () => {
     return (

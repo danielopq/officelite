@@ -1,6 +1,6 @@
 import '../../../assets/css/home/footer/homeFooter.css';
-import Plans from './Plans';
-import FooterBotton from './FooterBottom';
+import Plans from './Plans/Plans';
+import FooterBotton from './footerBotton/FooterBottom';
 const HomeFooter = () =>{
     return(
         <footer>
