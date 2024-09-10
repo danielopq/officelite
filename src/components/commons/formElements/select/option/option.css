@@ -3,3 +3,7 @@
     height: 62px;
     line-height: 62px;
 }
+
+.checked{
+    background: url('./img/icon-check.svg') 100% 50% / 12px no-repeat;
+}
