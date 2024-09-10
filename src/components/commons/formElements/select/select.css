@@ -1,0 +1,17 @@
+
+select{
+    width: inherit;
+    height: inherit;
+}
+
+.arrowDown{
+    background: url(./img/icon-arrow-down.svg) 100% 50% / 11px no-repeat;
+}
+
+#selectHeader{
+/* border: solid 1px red; */
+}
+
+#selectSubmenu{
+    display: none;
+}
