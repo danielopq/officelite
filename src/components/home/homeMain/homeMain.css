@@ -3,7 +3,7 @@ main{
     height: 1182px;
     margin:0px;
     padding: 81px 165px 0px 165px;
-    background: #FAFAFA url('../../img/home/bg-pattern-header.svg') 656px -419px/1134px no-repeat;
+    background: #FAFAFA url('../../../assets/img/home/bg-pattern-header.svg') 656px -419px/1134px no-repeat;
 }
 
 #mainContent{
@@ -39,5 +39,5 @@ main{
 #mainContent-img{
     width: 475px;
     height: 531px;
-    background: url('../../img/home/illustration-charts.svg') center/475px no-repeat;
+    background: url('../../../assets/img/home/illustration-charts.svg') center/475px no-repeat;
 }

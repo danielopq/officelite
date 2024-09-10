@@ -1,4 +1,4 @@
-import '../../../assets/css/home/footer/homeFooter.css';
+import './homeFooter.css';
 import Plans from './Plans/Plans';
 import FooterBotton from './footerBotton/FooterBottom';
 const HomeFooter = () =>{

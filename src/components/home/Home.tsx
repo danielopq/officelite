@@ -1,7 +1,5 @@
-import './components/home/HomeMain'
-import HomeMain from './components/home/HomeMain';
-import './components/home/footer/HomeFooter'
-import HomeFooter from './components/home/footer/HomeFooter';
+import HomeMain from './homeMain/HomeMain';
+import HomeFooter from './homeFooter/HomeFooter';
 const Home = () => {
     return (
         <>
