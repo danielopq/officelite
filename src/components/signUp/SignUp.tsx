@@ -13,7 +13,7 @@ const SignUp = () => {
                     moving into final development and getting ready for
                     official launch soon.
                 </p>
-                <BackCounter/>
+                <BackCounter bcType='light'/>
             </div>
             <div id="mainForm">
                 <SignUpForm/>

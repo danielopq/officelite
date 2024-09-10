@@ -1,5 +1,5 @@
 import './backCounter.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type props = {
     bcType: string;
@@ -9,30 +9,33 @@ interface classNamestate {
     lapse: string;
     comingLabel: string;
     lapseNumber: string;
-    lapseType: string;
 }
 
 const BackCounter: React.FC<props> = ({ bcType }) => {
 
-    const [classNameState, setClassName] = useState<classNamestate>({
+    const darkSkin = {
         lapse: 'lapse lapseDark',
         comingLabel: 'comingLabelDark',
         lapseNumber: 'lapseNumber lapseNumberDark',
-        lapseType: 'lapseType lapseTypeDark',
-    });
+    }
 
-    (() => {
-        if(bcType !== 'dark'){
-            setClassName({
-                lapse: 'lapse lapseLight',
-                comingLabel: 'comingLabelLight',
-                lapseNumber: 'lapseNumber lapseNumberLight',
-                lapseType: 'lapseType lapseTypeLight',
-            })
+    const lightSkin = {
+        lapse: 'lapse lapseLight',
+        comingLabel: 'comingLabelLight',
+        lapseNumber: 'lapseNumber lapseNumberLight',
+    }
+
+    const [classNameState, setClassName] = useState<classNamestate>(darkSkin);
+
+    const { lapse, comingLabel, lapseNumber} = classNameState;
+
+    useEffect(() => {
+        if (bcType === 'light') {
+          setClassName(lightSkin);
+        } else {
+          setClassName(darkSkin);
         }
-    })()
-
-    const { lapse, comingLabel, lapseNumber, lapseType } = classNameState;
+      }, [bcType]); 
 
     return (
         <div id="backCounter">
@@ -43,19 +46,19 @@ const BackCounter: React.FC<props> = ({ bcType }) => {
             <div id="counter">
                 <div className={lapse}>
                     <div className={lapseNumber}>47</div>
-                    <div className={lapseType}>days</div>
+                    <div className="lapseType">days</div>
                 </div>
                 <div className={lapse}>
                     <div className={lapseNumber}>07</div>
-                    <div className={lapseType}>hours</div>
+                    <div className="lapseType">hours</div>
                 </div>
                 <div className={lapse}>
                     <div className={lapseNumber}>56</div>
-                    <div className={lapseType}>min</div>
+                    <div className="lapseType">min</div>
                 </div>
                 <div className={lapse}>
                     <div className={lapseNumber}>14</div>
-                    <div className={lapseType}>sec</div>
+                    <div className="lapseType">sec</div>
                 </div>
             </div>
         </div>

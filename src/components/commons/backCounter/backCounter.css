@@ -47,7 +47,7 @@
 }
 
 .lapseLight{
-    background-color: var(--light-purple);
+    background-color: rgba(81,117,255,0.15);
 }
 
 .lapseNumber{
@@ -61,7 +61,7 @@
 }
 
 .lapseNumberLight{
-    color: var(--dark-purple)
+    color: var(--dark-purple);
 }
 
 .lapseType{
@@ -69,12 +69,5 @@
     display: inline-block;
     font: 700 16px/28px 'KumbhSans-Bold';
     margin-top: 2px;
-}
-
-.lapseTypeDark{
-    color: var(--light-grey);
-}
-
-.lapseTypeLight{
-    color: var(--light-grey);
+    color: var(--light-grey)
 }
