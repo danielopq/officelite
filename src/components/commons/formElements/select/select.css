@@ -1,7 +1,10 @@
 
-select{
+.select{
     width: inherit;
     height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .arrowDown{
@@ -9,9 +12,21 @@ select{
 }
 
 #selectHeader{
-/* border: solid 1px red; */
+    width: inherit;
+    height: inherit;
+    align-items: center;
 }
 
 #selectSubmenu{
-    display: none;
+    position: absolute;
+    margin-top: 53px;
+    z-index: 100;
+    width: 367px;
+    height: 198px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 0px 24px;
+    background-color: white;
+    border: solid 1px rgba(51,57,80,0.15);
+    border-radius: 8px;
 }
