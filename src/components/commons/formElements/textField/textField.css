@@ -13,3 +13,7 @@
 .textFieldError{
     color: var(--red);
 }
+
+.textFieldError::placeholder{
+    color: var(--red);
+}
