@@ -13,15 +13,15 @@ const SignUpForm = () => {
     return (
         <div id="signUpForm">
             <form id="getStartedForm">
-                <TextField id='name' error={false}>Name</TextField>
-                <TextField id='email' error={false}>Email Addres</TextField>
+                <TextField id='name' error={false} placeholder="Name"/>
+                <TextField id='email' error={false} placeholder="Email Address"/>
                 <Select id='plan'>
                     <Option id="free" checked={true} pack="Basic Pack" price="Free" />
                     <Option id="pro" checked={false} pack="Pro Pack" price="$9.99" />
                     <Option id="ultimate" checked={false} pack="Ultimate Pack" price="$19.99" />
                 </Select>
-                <TextField id='phone' error={false}>Phone Number</TextField>
-                <TextField id='company' error={true}>Company</TextField>
+                <TextField id='phone' error={false} placeholder="Phone Number"/>
+                <TextField id='company' error={true} placeholder="Company"/>
                 <DefaultButton buttonType='getOn' onButtonClick={validateForm}>Get on the list</DefaultButton>
             </form>
         </div>

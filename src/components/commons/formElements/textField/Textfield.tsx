@@ -4,23 +4,23 @@ import './textField.css'
 
 type Props = {
     id: string;
-    children: string;
-    error: boolean;
+    placeholder: string;
+    error?: boolean;
 }
 
-const TextField: React.FC<Props> = ({ id, children, error = false }) => {
+const TextField: React.FC<Props> = ({ id, placeholder, error = false }) => {
 
     const [contSkin, setContSkin] = useState('formContainer');
     const [tfSkin, setTfSkin] = useState('signUpTextfield');
 
     useEffect(() => {
-        error ? setContSkin('formContainer error') : setContSkin('formContainer');
-        error ? setTfSkin('signUpTextfield textFieldError') : setTfSkin('signUpTextfield');
+        setContSkin(error ? 'formContainer error' : 'formContainer');
+        setTfSkin(error ? 'signUpTextfield textFieldError' : 'signUpTextfield');
     }, [error])
 
     return (
         <div className={contSkin}>
-            <input id={id} name={id} type="text" placeholder={children} className={tfSkin}></input>
+            <input id={id} name={id} type="text" placeholder={placeholder} className={tfSkin}></input>
         </div>
     )
 }
