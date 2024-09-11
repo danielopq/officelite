@@ -11,17 +11,32 @@
     background: url(./img/icon-arrow-down.svg) 100% 50% / 11px no-repeat;
 }
 
-#selectHeader{
+.arrowUp{
+    background: url(./img/icon-arrow-up.svg) 100% 50% / 11px no-repeat;
+}
+
+.selectHeader{
     width: inherit;
     height: inherit;
     align-items: center;
 }
 
-#selectSubmenu{
-    position: absolute;
-    margin-top: 53px;
-    z-index: 100;
+.selectHeader p{
+    cursor: pointer;
+}
+
+.submenu{
     width: 367px;
+    height: 208px;
+    position: absolute;
+    margin-top: 45px;
+    z-index: 100;
+    display: none;
+    padding-top: 8px;
+}
+
+.submenuFrame{
+    width: inherit;
     height: 198px;
     display: flex;
     flex-direction: column;
