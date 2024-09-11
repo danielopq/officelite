@@ -8,11 +8,3 @@
     padding: 0px 16px;
     font: 700 16px/28px 'KumbhSans-Bold';
 }
-
-.pack{
-    color: black;
-}
-
-.price{
-    color: var(--light-grey);
-}

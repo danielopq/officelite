@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './option.css';
+import '../select.css'
 type Props = {
     id:string;
     checked:boolean

@@ -4,9 +4,10 @@ import './defaultButton.css';
 type ButtonProps = {
     children: string;
     buttonType: string;
+    onButtonClick: () => void;
 };
 
-const DefaultButton: React.FC<ButtonProps> = ({buttonType, children }) => {
+const DefaultButton: React.FC<ButtonProps> = ({buttonType, children,onButtonClick }) => {
 
     const setClass = (buttonType:String) =>{
         let buttonClass:string = '';
@@ -32,7 +33,7 @@ const DefaultButton: React.FC<ButtonProps> = ({buttonType, children }) => {
     }
 
     return (
-        <button className={setClass(buttonType)}>{children}</button>
+        <button className={setClass(buttonType)} onClick={onButtonClick}>{children}</button>
     )
 }
 
