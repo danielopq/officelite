@@ -1,0 +1,15 @@
+.error{
+    border-bottom: solid 1px var(--red) !important;
+    background: url('./img/icon-cross.svg') calc(100% - 20px) 4px/20px no-repeat ;
+    color: var(--red) !important;
+}
+
+.signUpTextfield{
+    width: calc(100% - 40px);
+    height: 28px;
+    color: var(--dark-blue-med);
+}
+
+.textFieldError{
+    color: var(--red);
+}

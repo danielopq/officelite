@@ -4,6 +4,7 @@
   --light-purple: #829CFF /*rgb(130, 156, 255) / hsl(228, 100%, 75%)*/;
   --dark-purple: #5175FF; /*rgb(81,117,255) / hsl(228,100%,66%) */
   --dark-blue-med: #333950; /*rgb(51,57,80) / hsl(228,22%,26%) */
+  --red: #F05B5B; /*rgb(240,91,91) / hsl(0,83%,65%) */
 }
 
 @font-face {
@@ -56,10 +57,7 @@ input::placeholder {
 }
 
 input[type="text"]{
-  width: 100%;
-  height: 28px;
   font: 400 16px/28px 'KumbhSans-Regular';
-  color: var(--dark-blue-med);
   margin: 0px;
   border: none;
 }

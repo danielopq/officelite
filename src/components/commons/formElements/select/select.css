@@ -8,11 +8,11 @@
 }
 
 .arrowDown{
-    background: url(./img/icon-arrow-down.svg) 100% 50% / 11px no-repeat;
+    background: url(./img/icon-arrow-down.svg) calc(100% - 8px) 50% / 11px no-repeat;
 }
 
 .arrowUp{
-    background: url(./img/icon-arrow-up.svg) 100% 50% / 11px no-repeat;
+    background: url(./img/icon-arrow-up.svg) calc(100% - 8px) 50% / 11px no-repeat;
 }
 
 .selectHeader{
