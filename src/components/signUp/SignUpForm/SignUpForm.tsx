@@ -1,9 +1,10 @@
 import './signUpForm.css';
+import { useState } from 'react';
 import TextField from '../../commons/formElements/textField/Textfield';
 import Select from '../../commons/formElements/select/Select';
 import Option from '../../commons/formElements/select/option/Option';
 import DefaultButton from '../../commons/defaultButton/DefaultButton';
-import { useState } from 'react';
+import {validateFilled, justLetters, validateEmail, validatePhone} from '../../../utils/validalidateForm';
 
 const SignUpForm = () => {
 
@@ -38,41 +39,6 @@ const SignUpForm = () => {
         validateForm();
     }
 
-    /**
-     * Validates whether a required text field is empty
-     * @param {string} text 
-     * @returns {boolean}
-     */
-    const validateFilled = (text: string): boolean => {
-        return (
-            text.trim().length != 0 ? true : false
-        )
-    }
-
-    /**
-     * Validates whether a text field contains only letters.
-     * @param {string} text
-     * @returns {boolean} 
-     */
-    function justLetters(text: string) {
-        const regex = /^[A-Za-z]+$/;
-        return regex.test(text);
-    }
-
-    /**
-     * Validates whether the email format is correct.
-     * @param {string} email 
-     * @returns {boolean}
-     */
-    const validateEmail = (email: string): boolean => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    };
-
-    const validatePhone = (phone: string): boolean => {
-        const numberRegex = /^0\d{10}$/;
-        return (numberRegex.test(phone) && phone.length == 11);
-    };
     /**
      * Validates whether all of the information in the form has the correct format.
      */
