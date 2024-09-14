@@ -1,25 +1,49 @@
 import { useEffect, useRef, useState } from 'react';
 import '../formContainer.css';
 import './select.css';
+import Option from './option/Option';
+
 
 
 type Props = {
     id: string;
     children: React.ReactNode;
+    initialPack:string;
+    inicialPrice:string;
 }
 
-const Select: React.FC<Props> = ({ id, children }) => {
+interface SelectedPackInterf {
+    pack: string;
+    price: string;
+}
+
+const Select: React.FC<Props> = ({ id, children,initialPack,inicialPrice  }) => {
     const select = useRef<HTMLDivElement>(null);
     const selection = useRef<HTMLDivElement>(null);
     const subMenu = useRef<HTMLDivElement>(null);
 
     const [submenuVisibility, setSubmenuVisibility] = useState(false);
 
+    const [selectedPack, setSelectedPack] = useState<SelectedPackInterf>({
+        pack: initialPack,
+        price: inicialPrice
+    });
+
+    const {pack,price} = selectedPack;
+
     useEffect(() => {
         if (subMenu.current) {
             subMenu.current.style.display = submenuVisibility ? 'flex' : 'none';
         }
     }, [submenuVisibility]);
+
+    const handleOptionClick = (newPackValue: string, newPriceValue: string) => {
+        setSelectedPack({
+            pack: newPackValue,
+            price: newPriceValue
+        }
+        );
+    };
 
     useEffect(() => {
         const currentSelect = select.current;
@@ -57,8 +81,8 @@ const Select: React.FC<Props> = ({ id, children }) => {
             <div ref={select} className='select'>
                 <div className="selectHeader">
                     <p id={id} ref={selection} className='arrowDown'>
-                        <span className="pack">Basic Pack </span>
-                        <span className="price">Free</span>
+                        <span className="pack">{pack}</span>
+                        <span className="price"> {price}</span>
                     </p>
                 </div>
                 <div ref={subMenu} className="submenu">
