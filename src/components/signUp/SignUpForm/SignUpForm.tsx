@@ -68,11 +68,7 @@ const SignUpForm = () => {
             <form id="getStartedForm" onSubmit={handleSubmit}>
                 <TextField id='name' error={validName} value={nameValue} placeholder="Name" onChange={handleInputChange} />
                 <TextField id='email' error={validEmail} value={emailValue} placeholder="Email Address" onChange={handleInputChange} />
-                <Select id='plan' initialPack='Basic Pack' inicialPrice='Free'>
-                    <Option id="free" checked={true} pack="Basic Pack" price="Free" />
-                    <Option id="pro" checked={false} pack="Pro Pack" price="$9.99" />
-                    <Option id="ultimate" checked={false} pack="Ultimate Pack" price="$19.99" />
-                </Select>
+                <Select id='plan' initialPack='Basic Pack' inicialPrice='Free'/>
                 <TextField id='phone' error={validPhone} value={phoneValue} placeholder="Phone Number" onChange={handleInputChange} />
                 <TextField id='company' error={validCompany} value={companyValue} placeholder="Company" onChange={handleInputChange} />
             </form>

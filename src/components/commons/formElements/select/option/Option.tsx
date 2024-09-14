@@ -24,10 +24,11 @@ const Option: React.FC<Props> = ({id,checked,pack,price,onClickButton})=>{
         if (onClickButton) {
             onClickButton(pack, price);
         }
+        console.log(pack)
     };
 
     return(
-        <div id={id} className={optionChecked}><span className="pack">{pack}</span><span className="price" onClick={handleClick}> {price}</span></div>
+        <div id={id} className={optionChecked} onClick={handleClick}><span className="pack">{pack}</span><span className="price"> {price}</span></div>
     )
 }
 export default Option;
