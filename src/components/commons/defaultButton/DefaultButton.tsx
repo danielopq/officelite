@@ -4,7 +4,7 @@ import './defaultButton.css';
 type ButtonProps = {
     children: string;
     buttonType: string;
-    onButtonClick: () => void;
+    onButtonClick?: () => void;
 };
 
 const DefaultButton: React.FC<ButtonProps> = ({buttonType, children,onButtonClick }) => {

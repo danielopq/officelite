@@ -6,9 +6,11 @@ type Props = {
     id: string;
     placeholder: string;
     error?: boolean;
+    value: string;
+    onChange: (id: string, value: string) => void;
 }
 
-const TextField: React.FC<Props> = ({ id, placeholder, error = false }) => {
+const TextField: React.FC<Props> = ({ id, placeholder, value, error = false, onChange }) => {
 
     const [contSkin, setContSkin] = useState('formContainer');
     const [tfSkin, setTfSkin] = useState('signUpTextfield');
@@ -18,9 +20,15 @@ const TextField: React.FC<Props> = ({ id, placeholder, error = false }) => {
         setTfSkin(error ? 'signUpTextfield textFieldError' : 'signUpTextfield');
     }, [error])
 
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (onChange) {
+            onChange(e.target.id,e.target.value);
+        }
+    };
+
     return (
         <div className={contSkin}>
-            <input id={id} name={id} type="text" placeholder={placeholder} className={tfSkin}></input>
+            <input id={id} name={id} type="text" placeholder={placeholder} value={value} className={tfSkin} onChange={handleInputChange} ></input>
         </div>
     )
 }
