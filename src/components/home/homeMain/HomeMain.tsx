@@ -1,3 +1,5 @@
+//Contains the main container for the home page. 
+
 import './homeMain.css';
 import Logo from '../../commons/logo/Logo';
 import DefaultButton from '../../commons/defaultButton/DefaultButton';
