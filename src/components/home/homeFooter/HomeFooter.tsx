@@ -5,7 +5,7 @@ import Plans from './Plans/Plans';
 import FooterBotton from './footerBotton/FooterBottom';
 const HomeFooter = () =>{
     return(
-        <footer>
+        <footer id="homeFooter">
            <Plans/>
            <FooterBotton/>
         </footer>

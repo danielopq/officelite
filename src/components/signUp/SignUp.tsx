@@ -8,8 +8,8 @@ import SignUpForm from './SignUpForm/SignUpForm';
 const SignUp = () => {
 
     return (
-        <main>
-            <div id="mainContent">
+        <main id="signUp">
+            <div id="signUpMainContent">
                 <Logo />
                 <h1>Work smarter. Save time.</h1>
                 <p className='mainText'>Easily manage your projects. Get on the list and receive

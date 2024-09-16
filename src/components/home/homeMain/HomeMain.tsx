@@ -5,10 +5,10 @@ import Logo from '../../commons/logo/Logo';
 import DefaultButton from '../../commons/defaultButton/DefaultButton';
 const HomeMain = () => {
     return (
-        <main>
+        <main id="home">
             <Logo />
-            <div id="mainContent">
-                <div id="mainContent-text">
+            <div id="homeMainContent">
+                <div id="homeMainContent-text">
                     <h1>A simple solution to complex tasks is coming soon</h1>
                     <p className='mainText'>Say goodbye to inefficient juggling of multiple apps, teams,
                         and projects. Officelite is the new collaboration platform
@@ -16,7 +16,7 @@ const HomeMain = () => {
                     </p>
                     <DefaultButton buttonType='getStartedShadow'>Get Started</DefaultButton>
                 </div>
-                <div id="mainContent-img"></div>
+                <div id="homeMainContent-img"></div>
             </div>
         </main>
     )

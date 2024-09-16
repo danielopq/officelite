@@ -1,4 +1,4 @@
-footer{
+#homeFooter{
     width: 1440px;
     height: 603px;
     margin: 0px;
@@ -9,7 +9,7 @@ footer{
     background: var(--darkest-grey) url('../../../assets/img/home/bg-pattern-footer.svg') -702px -614px/2036px no-repeat;
 }
 
-#footerDate{
+#homeFooterDate{
     width: inherit;
     height: 48px;
     font: 700 16px/48px 'KumbhSans-Bold';

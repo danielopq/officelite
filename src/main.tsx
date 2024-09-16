@@ -1,13 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Home from './components/home/Home';
-import SignUp from './components/signUp/SignUp';
+import { BrowserRouter } from 'react-router-dom';
+import OfficeEliteApp from './officeEliteApp';
+
 import './assets/css/index.css'
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {/* <Home/> */}
-    <SignUp/>
+    <BrowserRouter>
+      <OfficeEliteApp/>
+    </BrowserRouter>
   </StrictMode>,
 )

@@ -1,4 +1,4 @@
-main{
+#signUp{
     width: 1440px;
     height: 1024px;
     display: flex;
@@ -6,22 +6,22 @@ main{
     align-items: center;
 }
 
-#mainContent{
+#signUpMainContent{
     width: 1020px;
     height: inherit;
     padding: 81px 0px 0px 155px;
 }
 
-#mainContent > *{
+#signUpMainContent > *{
     width: 540px;
 }
 
-#mainContent h1{
+#signUpMainContent h1{
     height: 128px;
     margin-top: 154px;
 }
 
-#mainContent p{
+#signUpMainContent p{
     height: 84px;
     margin-top: 24px;
 }

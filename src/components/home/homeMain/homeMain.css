@@ -1,4 +1,4 @@
-main{
+#home{
     width: 1440px;
     height: 1182px;
     margin:0px;
@@ -6,7 +6,7 @@ main{
     background: #FAFAFA url('../../../assets/img/home/bg-pattern-header.svg') 656px -419px/1134px no-repeat;
 }
 
-#mainContent{
+#homeMainContent{
     width: 100%;
     height: auto;
     margin-top: 102px;
@@ -16,7 +16,7 @@ main{
     align-items: center;
 }
 
-#mainContent-text{
+#homeMainContent-text{
     width: 540px;
     height: 388px;
     display: flex;
@@ -24,19 +24,19 @@ main{
     align-items: flex-start;
 }
 
-#mainContent-text h1{
+#homeMainContent-text h1{
     width: inherit;
     height: 192px;
     margin-bottom: 24px;
 }
 
-#mainContent-text p{
+#homeMainContent-text p{
     width: inherit;
     height: 84px;
     margin-bottom: 32px;
 }
 
-#mainContent-img{
+#homeMainContent-img{
     width: 475px;
     height: 531px;
     background: url('../../../assets/img/home/illustration-charts.svg') center/475px no-repeat;
