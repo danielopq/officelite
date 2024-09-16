@@ -1,3 +1,5 @@
+// Main website component. Contains all signup elements.
+
 import './signUp.css';
 import Logo from '../commons/logo/Logo';
 import BackCounter from '../commons/backCounter/BackCounter';
