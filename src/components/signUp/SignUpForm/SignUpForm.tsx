@@ -2,8 +2,8 @@
 
 import './signUpForm.css';
 import { useState } from 'react';
-import TextField from '../../commons/formElements/textField/Textfield';
-import Select from '../../commons/formElements/select/Select';
+import TextField from './formElements/textField/Textfield';
+import Select from './formElements/select/Select';
 import DefaultButton from '../../commons/defaultButton/DefaultButton';
 import {validateFilled, justLetters, validateEmail, validatePhone} from '../../../utils/validalidateForm';
 
