@@ -2,8 +2,27 @@
     width: 100%;
     height: 62px;
     line-height: 62px;
+    
 }
 
 .checked{
     background: url('./img/icon-check.svg') 100% 50% / 12px no-repeat;
 }
+
+.optionBt{
+    cursor: pointer;
+}
+
+.optionBt:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.optionPack{
+    color: black;
+}
+
+.optionPrice{
+    color: var(--light-grey);
+}
+

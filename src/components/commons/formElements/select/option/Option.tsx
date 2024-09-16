@@ -1,16 +1,18 @@
+// Simulates an HTML option element included in a Select.
+
 import { useEffect, useState } from 'react';
 import './option.css';
-import '../select.css'
+
 type Props = {
-    id:string;
-    checked:boolean
-    pack:string;
-    price:string;
-    onClickButton?: (pack:string,price:string)=>void;
+    id: string; //Option id.
+    checked: boolean //Indicates whether the option is checked.
+    pack: string; //Pack name.
+    price: string; //Pack price.
+    onClickButton?: (pack: string, price: string) => void; //"onClick action. Returns the pack's name and its price
 }
 
-const Option: React.FC<Props> = ({id,checked,pack,price,onClickButton})=>{
-    
+const Option: React.FC<Props> = ({ id, checked, pack, price, onClickButton }) => {
+
     const [optionChecked, setOptionChecked] = useState("option");
 
     useEffect(() => {
@@ -24,11 +26,14 @@ const Option: React.FC<Props> = ({id,checked,pack,price,onClickButton})=>{
         if (onClickButton) {
             onClickButton(pack, price);
         }
-        console.log(pack)
     };
 
-    return(
-        <div id={id} className={optionChecked} onClick={handleClick}><span className="pack">{pack}</span><span className="price"> {price}</span></div>
+    return (
+        <div id={id} className={optionChecked} onClick={handleClick}>
+            <div className='optionBt'>
+                <span className="optionPack">{pack}</span><span className="optionPrice"> {price}</span>
+            </div>
+        </div>
     )
 }
 export default Option;

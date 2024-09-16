@@ -3,10 +3,13 @@ import '../formContainer.css';
 import './select.css';
 import Option from './option/Option';
 
+
+
 type Props = {
     id: string;
-    initialPack: string;
-    inicialPrice: string;
+    children: React.ReactNode;
+    initialPack:string;
+    inicialPrice:string;
 }
 
 interface SelectedPackInterf {
@@ -14,7 +17,7 @@ interface SelectedPackInterf {
     price: string;
 }
 
-const Select: React.FC<Props> = ({ id, initialPack, inicialPrice }) => {
+const Select: React.FC<Props> = ({ id, children,initialPack,inicialPrice  }) => {
     const select = useRef<HTMLDivElement>(null);
     const selection = useRef<HTMLDivElement>(null);
     const subMenu = useRef<HTMLDivElement>(null);
@@ -26,16 +29,7 @@ const Select: React.FC<Props> = ({ id, initialPack, inicialPrice }) => {
         price: inicialPrice
     });
 
-    const { pack, price } = selectedPack;
-
-    const [optionChecked,setOptionChecked] = useState({
-        basicChecked: false,
-        proChecked: false,
-        ultimateChecked: false
-    });
-
-    const{basicChecked,proChecked,ultimateChecked} = optionChecked; 
-    
+    const {pack,price} = selectedPack;
 
     useEffect(() => {
         if (subMenu.current) {
@@ -44,19 +38,11 @@ const Select: React.FC<Props> = ({ id, initialPack, inicialPrice }) => {
     }, [submenuVisibility]);
 
     const handleOptionClick = (newPackValue: string, newPriceValue: string) => {
-        setOptionChecked({
-            basicChecked: false,
-            proChecked: false,
-            ultimateChecked: false
-        });
-
-        setOptionChecked((optionChecked) => ({
-            ...optionChecked,
-            [`${id}Checked`]: true,
-        }));
-
-
-        setSelectedPack({pack: newPackValue,price: newPriceValue});
+        setSelectedPack({
+            pack: newPackValue,
+            price: newPriceValue
+        }
+        );
     };
 
     useEffect(() => {
@@ -101,9 +87,7 @@ const Select: React.FC<Props> = ({ id, initialPack, inicialPrice }) => {
                 </div>
                 <div ref={subMenu} className="submenu">
                     <div className="submenuFrame">
-                        <Option id="basic" checked={basicChecked} pack="Basic Pack" price="Free" onClickButton={handleOptionClick}/>
-                        <Option id="pro" checked={proChecked} pack="Pro Pack" price="$9.99" onClickButton={handleOptionClick}/>
-                        <Option id="ultimate" checked={ultimateChecked} pack="Ultimate Pack" price="$19.99" onClickButton={handleOptionClick}/>
+                        {children}
                     </div>
                 </div>
             </div>
