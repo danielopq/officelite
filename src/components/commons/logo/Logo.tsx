@@ -1,3 +1,5 @@
+// Contains the company's logo
+
 import './logo.css'
 
 const Logo = () =>{
