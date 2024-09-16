@@ -1,0 +1,46 @@
+#confBackground{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    justify-content: center;
+}
+
+#confContent{
+    width: 400px;
+    height: 345px;
+    padding: 45px;
+    border-radius: 13px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#confContent p{
+    text-align: center;
+    font: 700 32px/40px 'KumbhSans-Bold';
+}
+
+#confText{
+    color: var(--dark-blue-med);
+}
+
+#confThanks{
+    color: var(--light-grey);
+}
+
+#confContent,#confBackground{
+    flex-direction: column;
+    align-items: center;
+}
+
+.visible{
+    display: flex;
+}
+
+.invisible{
+    display: none;
+}

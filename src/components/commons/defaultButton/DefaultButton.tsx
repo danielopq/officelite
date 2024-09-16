@@ -21,6 +21,9 @@ const DefaultButton: React.FC<ButtonProps> = ({buttonType, children,onButtonClic
             case 'getOn':
                 buttonClass = 'getButton longButton';
                 break;
+            case 'accept':
+                buttonClass = 'getButton shortButton';
+                break;
             case 'tryDark':
                 buttonClass = 'tryDarkButton shortButton';
                 break;
