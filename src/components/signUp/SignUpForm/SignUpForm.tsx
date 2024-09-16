@@ -6,9 +6,10 @@ import Confirmation from './confirmation/Confirmation';
 import TextField from './formElements/textField/Textfield';
 import Select from './formElements/select/Select';
 import DefaultButton from '../../commons/defaultButton/DefaultButton';
-import { validateFilled, justLetters, validateEmail, validatePhone } from '../../../utils/validalidateForm';
+import { validateForm } from '../../../utils/validateForm';
 
 const SignUpForm = () => {
+    const form = document.getElementById('getStartedForm') as HTMLFormElement;
     // Stores the values of all text fields.
     const [inputValue, setInputValue] = useState({
         nameValue: '',
@@ -28,7 +29,6 @@ const SignUpForm = () => {
     });
 
     const { validName, validEmail, validPhone, validCompany } = errors || {};
-
 
     // Tracks wether confirmation message is displayed.
     const [showConfirmation, setShowConfirmation] = useState(false);
@@ -54,33 +54,11 @@ const SignUpForm = () => {
 
     /**
      * Handles form submission and triggers validation.
-     * @param {React.FormEvent} e - Form event
      */
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        validateForm();
-    }
-
-    /**
-     *  Validates whether the form data is correctly formatted.
-     */
-    const validateForm = () => {
-        const form = document.getElementById('getStartedForm') as HTMLFormElement;
-        let foundErrors = {
-            validName: false,
-            validEmail: false,
-            validPhone: false,
-            validCompany: false,
-        };
-
-        foundErrors.validName = !(validateFilled(nameValue) || justLetters(nameValue));
-        foundErrors.validEmail = !validateEmail(emailValue);
-        foundErrors.validPhone = !validatePhone(phoneValue);
-        foundErrors.validCompany = !validateFilled(companyValue);
-        console.table(foundErrors)
-        setErrors(foundErrors);
-
-        if (foundErrors.validName == false && foundErrors.validEmail == false && foundErrors.validPhone == false && foundErrors.validCompany == false) {
+    const handleSubmit = () => {
+        form.preventDefault();
+        setErrors(validateForm(nameValue,emailValue,phoneValue,companyValue));
+        if (validName == false && validEmail == false && validPhone == false && validCompany == false) {
             displayConfirmation();
             form.submit();
         }
@@ -97,7 +75,7 @@ const SignUpForm = () => {
                     <TextField id='phone' error={validPhone} value={phoneValue} placeholder="Phone Number" onChange={handleInputChange} />
                     <TextField id='company' error={validCompany} value={companyValue} placeholder="Company" onChange={handleInputChange} />
                 </form>
-                <DefaultButton buttonType='getOn' onButtonClick={validateForm}>Get on the list</DefaultButton>
+                <DefaultButton buttonType='getOn' onButtonClick={handleSubmit}>Get on the list</DefaultButton>
             </div>
         </>
     )
