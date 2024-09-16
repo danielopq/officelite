@@ -29,7 +29,7 @@ const Select: React.FC<Props> = ({ id, initialPack, inicialPrice }) => {
     const { pack, price } = selectedPack;
 
     const [optionChecked,setOptionChecked] = useState({
-        basicChecked: false,
+        basicChecked: true,
         proChecked: false,
         ultimateChecked: false
     });
@@ -43,7 +43,8 @@ const Select: React.FC<Props> = ({ id, initialPack, inicialPrice }) => {
         }
     }, [submenuVisibility]);
 
-    const handleOptionClick = (newPackValue: string, newPriceValue: string) => {
+    const handleOptionClick = (newPackValue: string, newPriceValue: string, selectId:string) => {
+        let optionLabel: string = selectId + 'Checked';
         setOptionChecked({
             basicChecked: false,
             proChecked: false,
@@ -52,8 +53,10 @@ const Select: React.FC<Props> = ({ id, initialPack, inicialPrice }) => {
 
         setOptionChecked((optionChecked) => ({
             ...optionChecked,
-            [`${id}Checked`]: true,
+            [optionLabel]: true,
         }));
+
+        console.log(optionChecked);
 
 
         setSelectedPack({pack: newPackValue,price: newPriceValue});
