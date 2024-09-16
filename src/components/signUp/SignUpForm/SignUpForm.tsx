@@ -1,3 +1,5 @@
+// Includes all form elements for the sign-up process.
+
 import './signUpForm.css';
 import { useState } from 'react';
 import TextField from '../../commons/formElements/textField/Textfield';
@@ -6,7 +8,7 @@ import DefaultButton from '../../commons/defaultButton/DefaultButton';
 import {validateFilled, justLetters, validateEmail, validatePhone} from '../../../utils/validalidateForm';
 
 const SignUpForm = () => {
-
+    // Stores the values of all text fields.
     const [inputValue, setInputValue] = useState({
         nameValue: '',
         emailValue: '',
@@ -16,6 +18,7 @@ const SignUpForm = () => {
 
     const { nameValue, emailValue, phoneValue, companyValue } = inputValue || {};
 
+    // Tracks possible validation errors for the text fields
     const [errors, setErrors] = useState({
         validName: false,
         validEmail: false,
@@ -25,21 +28,29 @@ const SignUpForm = () => {
 
     const { validName, validEmail, validPhone, validCompany } = errors || {};
 
+    /**
+     * Updates the value of a text field when modified by the user. 
+     * @param {string} id - Text field ID.
+     * @param {string} value - New value for the text field.
+     */
     const handleInputChange = (id: string, value: string) => {
-
         setInputValue((inputValue) => ({
             ...inputValue,
             [`${id}Value`]: value,
         }));
     };
 
+    /**
+     * Handles form submission and triggers validation.
+     * @param {React.FormEvent} e - Form event
+     */
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         validateForm();
     }
 
     /**
-     * Validates whether all of the information in the form has the correct format.
+     *  Validates whether the form data is correctly formatted.
      */
     const validateForm = () => {
         const form = document.getElementById('getStartedForm') as HTMLFormElement;
