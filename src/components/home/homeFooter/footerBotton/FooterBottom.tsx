@@ -6,7 +6,7 @@ import BackCounter from '../../../commons/backCounter/BackCounter';
 const FooterBotton = () => {
     return (
         <div id="footerBottom">
-            <BackCounter bcType='darkSkin' />
+            <BackCounter skinTheme='darkSkin' />
             <DefaultButton buttonType='getStarted'>Get Started</DefaultButton>
         </div>
     )

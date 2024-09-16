@@ -17,7 +17,7 @@ const SignUp = () => {
                     moving into final development and getting ready for
                     official launch soon.
                 </p>
-                <BackCounter bcType='light'/>
+                <BackCounter skinTheme='light'/>
             </div>
             <div id="mainForm">
                 <SignUpForm/>

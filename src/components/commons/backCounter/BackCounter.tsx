@@ -1,41 +1,47 @@
+// Contains the countdown timer elements.
+
 import './backCounter.css';
 import { useEffect, useState } from 'react';
 
-type props = {
-    bcType: string;
+type Props = {
+    skinTheme: string; // Defines the visual style of the counter ('light' or 'dark').
 }
 
-interface classNamestate {
-    lapse: string;
-    comingLabel: string;
-    lapseNumber: string;
+interface ClassNameState {
+    lapse: string; // CSS class for each time segment container.
+    comingLabel: string; // CSS class for the "COMING" text and day label.
+    lapseNumber: string; // CSS class for the number display of each time segment.
 }
 
-const BackCounter: React.FC<props> = ({ bcType }) => {
+const BackCounter: React.FC<Props> = ({ skinTheme }) => {
 
+    // Dark theme (used on the homepage).
     const darkSkin = {
         lapse: 'lapse lapseDark',
         comingLabel: 'comingLabelDark',
         lapseNumber: 'lapseNumber lapseNumberDark',
-    }
+    };
 
+    // Light theme (used on the sign-up page).
     const lightSkin = {
         lapse: 'lapse lapseLight',
         comingLabel: 'comingLabelLight',
         lapseNumber: 'lapseNumber lapseNumberLight',
-    }
+    };
 
-    const [classNameState, setClassName] = useState<classNamestate>(darkSkin);
+    // State to manage the selected skin/theme.
+    const [classNameState, setClassName] = useState<ClassNameState>(darkSkin);
 
-    const { lapse, comingLabel, lapseNumber} = classNameState;
+    const { lapse, comingLabel, lapseNumber } = classNameState;
 
+    // Switches the theme based on the provided skinTheme prop.
     useEffect(() => {
-        if (bcType === 'light') {
+        if (skinTheme === 'light') {
           setClassName(lightSkin);
         } else {
           setClassName(darkSkin);
         }
-      }, [bcType]); 
+    }, [skinTheme]);
 
     return (
         <div id="backCounter">
@@ -62,7 +68,7 @@ const BackCounter: React.FC<props> = ({ bcType }) => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default BackCounter;
