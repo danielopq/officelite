@@ -1,4 +1,4 @@
-#backCounter{
+.backCounter{
     width: 448px;
     height: 184px;
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 
-#expiringDate{
+.expiringDate{
     height: 48px;
     font: 700 16px/48px 'KumbhSans-Bold';
     letter-spacing: 5px;
@@ -20,11 +20,11 @@
     color: var(--dark-blue-med);
 }
 
-#dateLabel{
+.dateLabel{
     color: var(--dark-purple);
 }
 
-#counter{
+.counter{
     width: inherit;
     height: 128px;
     display: flex;

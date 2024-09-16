@@ -44,12 +44,12 @@ const BackCounter: React.FC<Props> = ({ skinTheme }) => {
     }, [skinTheme]);
 
     return (
-        <div id="backCounter">
-            <div id="expiringDate">
+        <div className="backCounter">
+            <div className="expiringDate">
                 <span className={comingLabel}>COMING 4</span>
-                <span id="dateLabel"> NOV 2020</span>
+                <span className="dateLabel"> NOV 2020</span>
             </div>
-            <div id="counter">
+            <div className="counter">
                 <div className={lapse}>
                     <div className={lapseNumber}>47</div>
                     <div className="lapseType">days</div>
