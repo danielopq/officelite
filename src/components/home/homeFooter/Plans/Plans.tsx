@@ -1,3 +1,5 @@
+// Displays the different plans and their features on the homepage.
+
 import './plans.css';
 import DefaultButton from '../../../commons/defaultButton/DefaultButton';
 
