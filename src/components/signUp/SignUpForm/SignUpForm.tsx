@@ -1,7 +1,7 @@
 // Includes all form elements for the sign-up process.
 
 import './signUpForm.css';
-import { useState } from 'react';
+import { useState,useRef } from 'react';
 import Confirmation from './confirmation/Confirmation';
 import TextField from './formElements/textField/Textfield';
 import Select from './formElements/select/Select';
@@ -14,8 +14,8 @@ type SignUpFormProps = {
     selectedPackPrice: string;
 }
 
-const SignUpForm: React.FC<SignUpFormProps> = ({ selectedPack, selectedPackPrice }) => {
-    const form = document.getElementById('getStartedForm') as HTMLFormElement;
+const SignUpForm: React.FC<SignUpFormProps> = ({ selectedPack="Basic Pack", selectedPackPrice="Free" }) => {
+    const formRef = useRef<HTMLFormElement | null>(null);
     // Stores the values of all text fields.
     const [inputValue, setInputValue] = useState({
         nameValue: '',
@@ -40,10 +40,11 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ selectedPack, selectedPackPrice
     const [showConfirmation, setShowConfirmation] = useState(false);
 
     /**
-     * Displays a confirmation message when the form is submitted.
+     * Displays a confirmation message when the formRef is submitted.
      */
     const displayConfirmation = () => {
         setShowConfirmation(!showConfirmation);
+        formRef.current?.submit();
     }
 
     /**
@@ -61,12 +62,13 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ selectedPack, selectedPackPrice
     /**
      * Handles form submission and triggers validation.
      */
-    const handleSubmit = () => {
-        form.preventDefault();
-        setErrors(validateForm(nameValue,emailValue,phoneValue,companyValue));
-        if (validName == false && validEmail == false && validPhone == false && validCompany == false) {
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const foundErrors = validateForm(nameValue, emailValue, phoneValue, companyValue);
+        if (!foundErrors.validName && !foundErrors.validEmail && !foundErrors.validPhone && !foundErrors.validCompany) {
             displayConfirmation();
-            form.submit();
+        }else{
+            setErrors(foundErrors); 
         }
     }
 
@@ -74,14 +76,14 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ selectedPack, selectedPackPrice
         <>
             <Confirmation showConfirmation={showConfirmation} displayConfirmation={displayConfirmation} />
             <div id="signUpForm">
-                <form id="getStartedForm" onSubmit={handleSubmit}>
+                <form id="getStartedForm" onSubmit={handleSubmit} ref={formRef}>
                     <TextField id='name' error={validName} value={nameValue} placeholder="Name" onChange={handleInputChange} />
                     <TextField id='email' error={validEmail} value={emailValue} placeholder="Email Address" onChange={handleInputChange} />
                     <Select id='plan' initialPack={selectedPack} inicialPrice={selectedPackPrice} />
                     <TextField id='phone' error={validPhone} value={phoneValue} placeholder="Phone Number" onChange={handleInputChange} />
                     <TextField id='company' error={validCompany} value={companyValue} placeholder="Company" onChange={handleInputChange} />
+                    <DefaultButton buttonType='getOn'>Get on the list</DefaultButton>
                 </form>
-                <DefaultButton buttonType='getOn' onButtonClick={handleSubmit}>Get on the list</DefaultButton>
             </div>
         </>
     )

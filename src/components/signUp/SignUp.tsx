@@ -14,8 +14,10 @@ type selectPlaninfo = {
 
 const SignUp = () => {
     const location = useLocation();
-    const selectPlan = location.state as selectPlaninfo;
-    // console.log('origen:', state)
+    const selectPlan = (location.state as selectPlaninfo) || {
+        selectedPack: "Basic Pack",  // Valor por defecto para `selectedPack`
+        selectedPackPrice: "Free"        // Valor por defecto para `selectedPackPrice`
+    };
 
     return (
         <main id="signUp">

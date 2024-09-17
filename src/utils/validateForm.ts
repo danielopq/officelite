@@ -15,7 +15,7 @@
         foundErrors.validEmail = !validateEmail(emailValue);
         foundErrors.validPhone = !validatePhone(phoneValue);
         foundErrors.validCompany = !validateFilled(companyValue);
-        console.table(foundErrors)
+        // console.table(foundErrors)
         
         return(foundErrors);
     }
