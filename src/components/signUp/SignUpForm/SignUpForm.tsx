@@ -8,7 +8,13 @@ import Select from './formElements/select/Select';
 import DefaultButton from '../../commons/defaultButton/DefaultButton';
 import { validateForm } from '../../../utils/validateForm';
 
-const SignUpForm = () => {
+
+type SignUpFormProps = {
+    selectedPack: string;
+    selectedPackPrice: string;
+}
+
+const SignUpForm: React.FC<SignUpFormProps> = ({ selectedPack, selectedPackPrice }) => {
     const form = document.getElementById('getStartedForm') as HTMLFormElement;
     // Stores the values of all text fields.
     const [inputValue, setInputValue] = useState({
@@ -71,7 +77,7 @@ const SignUpForm = () => {
                 <form id="getStartedForm" onSubmit={handleSubmit}>
                     <TextField id='name' error={validName} value={nameValue} placeholder="Name" onChange={handleInputChange} />
                     <TextField id='email' error={validEmail} value={emailValue} placeholder="Email Address" onChange={handleInputChange} />
-                    <Select id='plan' initialPack='Basic Pack' inicialPrice='Free' />
+                    <Select id='plan' initialPack={selectedPack} inicialPrice={selectedPackPrice} />
                     <TextField id='phone' error={validPhone} value={phoneValue} placeholder="Phone Number" onChange={handleInputChange} />
                     <TextField id='company' error={validCompany} value={companyValue} placeholder="Company" onChange={handleInputChange} />
                 </form>

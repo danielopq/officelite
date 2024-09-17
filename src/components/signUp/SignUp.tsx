@@ -4,8 +4,18 @@ import './signUp.css';
 import Logo from '../commons/logo/Logo';
 import BackCounter from '../commons/backCounter/BackCounter';
 import SignUpForm from './SignUpForm/SignUpForm';
+import { useLocation } from 'react-router-dom';
+
+type selectPlaninfo = {
+    selectedPack: string;
+    selectedPackPrice: string;
+}
+
 
 const SignUp = () => {
+    const location = useLocation();
+    const selectPlan = location.state as selectPlaninfo;
+    // console.log('origen:', state)
 
     return (
         <main id="signUp">
@@ -20,7 +30,7 @@ const SignUp = () => {
                 <BackCounter skinTheme='light'/>
             </div>
             <div id="mainForm">
-                <SignUpForm/>
+                <SignUpForm selectedPack={selectPlan.selectedPack} selectedPackPrice={selectPlan.selectedPackPrice}/>
             </div>
         </main>
     )

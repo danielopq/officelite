@@ -4,9 +4,9 @@ import './plans.css';
 import DefaultButton from '../../../commons/defaultButton/DefaultButton';
 import { useNavigate } from 'react-router-dom';
 
-type selectPlaninfo = {
-    initialPack: string;
-    inicialPrice: string
+type selectedPlanInfo = {
+    selectedPack: string;
+    selectedPackPrice: string;
 }
 
 const Plans = () => {
@@ -18,20 +18,19 @@ const Plans = () => {
      */
     
     const navigateToSignUp = (event: React.MouseEvent<HTMLButtonElement>) =>{
-        let selectedPlan:selectPlaninfo = {initialPack: '', inicialPrice: ''}; 
+        let selectedPlan:selectedPlanInfo = {selectedPack: '', selectedPackPrice: ''}; 
         switch(event.currentTarget.id){
             case 'tryBasicButton':
-                selectedPlan = {initialPack: 'Basic Pack', inicialPrice: 'Free'};
+                selectedPlan = {selectedPack: 'Basic Pack', selectedPackPrice: 'Free'};
                 break;
             case 'tryProButton':
-                selectedPlan = {initialPack: 'Pro Pack', inicialPrice: '$9.99'};
+                selectedPlan = {selectedPack: 'Pro Pack', selectedPackPrice: '$9.99'};
                 break;
             case 'tryUltimateButton':
-                selectedPlan = {initialPack: 'Ultimate Pack', inicialPrice: '19.99$'};
+                selectedPlan = {selectedPack: 'Ultimate Pack', selectedPackPrice: '19.99$'};
                 break;
         }
         navigate('/signup', { state: selectedPlan });
-        console.log('selectedPlan:', selectedPlan)
     }
 
     return (

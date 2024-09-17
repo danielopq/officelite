@@ -16,7 +16,7 @@ interface SelectedPackInterf {
     price: string; // Price of the selected pack.
 }
 
-const Select: React.FC<Props> = ({ id, initialPack, inicialPrice }) => {
+const Select: React.FC<Props> = ({ id, initialPack='Basic Pack', inicialPrice='Free' }) => {
 
     const select = useRef<HTMLDivElement>(null); // Reference to the entire select element.
     const selection = useRef<HTMLDivElement>(null); // Reference to the selected option, displayed in the header.
