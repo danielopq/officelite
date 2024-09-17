@@ -9,14 +9,18 @@
     background: var(--darkest-grey) url('../../../assets/img/home/bg-pattern-footer.svg') -702px -614px/2036px no-repeat;
 }
 
-#homeFooterDate{
-    width: inherit;
-    height: 48px;
-    font: 700 16px/48px 'KumbhSans-Bold';
-    letter-spacing: 5px;
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #homeFooter{
+        width: 100vw;
+        height: 986px;
+        background: var(--darkest-grey) url('../../../assets/img/home/bg-pattern-footer.svg') 50% 15px/1454px no-repeat;
+    }
 }
 
-#footerCounter{
-    width: inherit;
-    height: 128px;
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:480px) {
+
 }

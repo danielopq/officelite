@@ -41,3 +41,22 @@
     height: 531px;
     background: url('../../../assets/img/home/illustration-charts.svg') center/475px no-repeat;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #home{
+        width: 100vw;
+        height: 1196px;
+        margin:0px;
+        padding: 81px 39px 0px 39px;
+        background: #FAFAFA url('../../../assets/img/home/bg-pattern-header.svg') 395px -164px/666px no-repeat;
+        border: solid 1px red;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:480px) {
+
+}
