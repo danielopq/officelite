@@ -1,9 +1,22 @@
 //Contains the main container for the home page. 
 
+import { useNavigate } from 'react-router-dom';
 import './homeMain.css';
 import Logo from '../../commons/logo/Logo';
 import DefaultButton from '../../commons/defaultButton/DefaultButton';
+
 const HomeMain = () => {
+
+    const navigate = useNavigate();
+
+    /**
+     * Renders the sign-up page.
+     */
+    
+    const navigateToSignUp = () =>{
+        navigate('/signup');
+    }
+
     return (
         <main id="home">
             <Logo />
@@ -14,7 +27,7 @@ const HomeMain = () => {
                         and projects. Officelite is the new collaboration platform
                         built with an intuitive interface to improve productivity.
                     </p>
-                    <DefaultButton buttonType='getStartedShadow'>Get Started</DefaultButton>
+                    <DefaultButton buttonType='getStartedShadow' onButtonClick={navigateToSignUp}>Get Started</DefaultButton>
                 </div>
                 <div id="homeMainContent-img"></div>
             </div>

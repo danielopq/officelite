@@ -2,8 +2,38 @@
 
 import './plans.css';
 import DefaultButton from '../../../commons/defaultButton/DefaultButton';
+import { useNavigate } from 'react-router-dom';
+
+type selectPlaninfo = {
+    initialPack: string;
+    inicialPrice: string
+}
 
 const Plans = () => {
+
+    const navigate = useNavigate();
+
+    /**
+     * Renders the sign-up page.
+     */
+    
+    const navigateToSignUp = (event: React.MouseEvent<HTMLButtonElement>) =>{
+        let selectedPlan:selectPlaninfo = {initialPack: '', inicialPrice: ''}; 
+        switch(event.currentTarget.id){
+            case 'tryBasicButton':
+                selectedPlan = {initialPack: 'Basic Pack', inicialPrice: 'Free'};
+                break;
+            case 'tryProButton':
+                selectedPlan = {initialPack: 'Pro Pack', inicialPrice: '$9.99'};
+                break;
+            case 'tryUltimateButton':
+                selectedPlan = {initialPack: 'Ultimate Pack', inicialPrice: '19.99$'};
+                break;
+        }
+        navigate('/signup', { state: selectedPlan });
+        console.log('selectedPlan:', selectedPlan)
+    }
+
     return (
         <div id="plans">
             <div id="basicPlan" className='planFrame'>
@@ -13,7 +43,7 @@ const Plans = () => {
                 <p className='planFeature'>Basic document collaboration</p>
                 <p className='planFeature'>2 GB storage</p>
                 <p className='planFeature'>Great security and support</p>
-                <DefaultButton buttonType='tryDark'>Try for Free</DefaultButton>
+                <DefaultButton id="tryBasicButton" buttonType='tryDark' onButtonClick={navigateToSignUp}>Try for Free</DefaultButton>
             </div>
             <div id="proPlan" className='planFrame'>
                 <p className='planName'>Pro</p>
@@ -22,7 +52,7 @@ const Plans = () => {
                 <p className='planFeature'>All essential integrations</p>
                 <p className='planFeature'>50 GB storage</p>
                 <p className='planFeature'>More control and insights</p>
-                <DefaultButton buttonType='tryLight'>Try for Free</DefaultButton>
+                <DefaultButton id="tryProButton" buttonType='tryLight' onButtonClick={navigateToSignUp}>Try for Free</DefaultButton>
             </div>
             <div id="ultimatePlan" className='planFrame'>
                 <p className='planName'>Ultimate</p>
@@ -31,7 +61,7 @@ const Plans = () => {
                 <p className='planFeature'>Robust work management</p>
                 <p className='planFeature'>100 GB storage</p>
                 <p className='planFeature'>VIP support</p>
-                <DefaultButton buttonType='tryDark'>Try for Free</DefaultButton>
+                <DefaultButton id="tryUltimateButton" buttonType='tryDark' onButtonClick={navigateToSignUp}>Try for Free</DefaultButton>
             </div>
         </div>
     )

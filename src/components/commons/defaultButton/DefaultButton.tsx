@@ -2,56 +2,56 @@ import React from 'react';
 import './defaultButton.css';
 
 type ButtonProps = {
-    children: string; // Text to be displayed inside the button.
-    buttonType: string; // Type of the button which determines its styling.
-    onButtonClick?: () => void; // Optional function to be called when the button is clicked.
+    id?: string;
+    children: string;
+    buttonType: string;
+    onButtonClick?: (event: React.MouseEvent<HTMLButtonElement>) => void; // Function to be called when the button is clicked.
 };
 
 /**
- * Defines the buttons used by the app.
- * @param {ButtonProps} props - Button type, text on the button, and click action.
- * @returns {JSX.Element} The rendered button component.
+ * Defines the buttons used by the app
+ * @param {<ButtonProps>} param (Button type, text on the button, actions)
+ * @returns 
  */
-const DefaultButton: React.FC<ButtonProps> = ({ buttonType, children, onButtonClick }) => {
+const DefaultButton: React.FC<ButtonProps> = ({ id, buttonType, children, onButtonClick }) => {
 
-    /**
-     * Sets the button's CSS class based on its type.
-     * @param {string} buttonType - The type of the button to determine its style.
-     * @returns {string} The CSS class for the button.
-     */
-    const setClass = (buttonType: string) => {
+    const setClass = (buttonType: String) => {
         let buttonClass: string = '';
-        switch(buttonType) {
+        switch (buttonType) {
             case 'getStartedShadow':
-                buttonClass = 'getButton shortButton buttonShadow'; // Get started button with shadow.
+                buttonClass = 'getButton shortButton buttonShadow'; //get started button with shadow
                 break;
-            case 'getStarted':
-                buttonClass = 'getButton shortButton'; // Get started button with no shadow.
+            case 'getStarted': //get started button with no shadow
+                buttonClass = 'getButton shortButton';
                 break;
-            case 'getOn':
-                buttonClass = 'getButton longButton'; // Get on button in the sign-in form.
+            case 'getOn': //get on button at the sign in form
+                buttonClass = 'getButton longButton';
                 break;
-            case 'accept':
-                buttonClass = 'getButton shortButton'; // Accept button in the confirmation window.
+            case 'accept': //accept button at the confirmation window
+                buttonClass = 'getButton shortButton';
                 break;
-            case 'tryDark':
-                buttonClass = 'tryDarkButton shortButton'; // Try for free button (dark version).
+            case 'tryDark': //try for free button (dark version)
+                buttonClass = 'tryDarkButton shortButton';
                 break;
-            case 'tryLight':
-                buttonClass = 'tryLightButton shortButton'; // Try for free button (light version).
-                break;
-            default:
-                buttonClass = 'getButton'; // Default button class.
+            case 'tryLight': //try for free button (light version)
+                buttonClass = 'tryLightButton shortButton';
                 break;
         }
 
-        return buttonClass; 
+        return buttonClass;
+    }
+
+    // If the 'id' parameter is provided, we create a button with the specified 'id'.
+    // Otherwise, we create a button without an 'id'.
+    
+    if ({ id }) {
+        return (
+            <button id={id} className={setClass(buttonType)} onClick={(event) => onButtonClick?.(event)}>{children}</button>
+        )
     }
 
     return (
-        <button className={setClass(buttonType)} onClick={onButtonClick}>
-            {children}
-        </button>
+        <button className={setClass(buttonType)} onClick={(event) => onButtonClick?.(event)}>{children}</button>
     )
 }
 
