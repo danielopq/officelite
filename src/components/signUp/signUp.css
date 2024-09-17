@@ -10,6 +10,9 @@
     width: 1020px;
     height: inherit;
     padding: 81px 0px 0px 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #signUpMainContent > *{
@@ -32,3 +35,49 @@
     height: inherit;
     background: var(--darkest-grey) url('../../assets/img/sign-up/bg-pattern-side.svg') 50% -786px/2036px no-repeat;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #signUp{
+        width: 100vw;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #signUpMainContent{
+        width: 100vw;
+        height: 935px;
+        padding: 72px 39px 0px 39px;
+        align-items: center;
+    }
+
+    #signUpMainContent > *{
+        width: 572px;
+        text-align: center;
+    }
+
+    #signUpLogo{
+        width: 100%;
+    }
+
+    #signUpMainContent h1{
+        height: 48px;
+        margin-top: 104px;
+    }
+
+    #signUpMainContent p{
+        height: 78px;
+    }
+
+    #mainForm{
+        width: 100vw;
+        height: 380px;
+        background: var(--darkest-grey) url('../../assets/img/sign-up/bg-pattern-side.svg') 50% 50%/1454px no-repeat;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:480px) {}

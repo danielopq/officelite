@@ -22,17 +22,19 @@ const SignUp = () => {
     return (
         <main id="signUp">
             <div id="signUpMainContent">
-                <Logo />
+                <div id="signUpLogo">
+                    <Logo />
+                </div>
                 <h1>Work smarter. Save time.</h1>
                 <p className='mainText'>Easily manage your projects. Get on the list and receive
                     in-app perks available only to early subscribers. We are
                     moving into final development and getting ready for
                     official launch soon.
                 </p>
-                <BackCounter skinTheme='light'/>
+                <BackCounter skinTheme='light' />
             </div>
             <div id="mainForm">
-                <SignUpForm selectedPack={selectPlan.selectedPack} selectedPackPrice={selectPlan.selectedPackPrice}/>
+                <SignUpForm selectedPack={selectPlan.selectedPack} selectedPackPrice={selectPlan.selectedPackPrice} />
             </div>
         </main>
     )
