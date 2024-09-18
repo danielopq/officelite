@@ -3,3 +3,12 @@
     height: 30px;
     background: url('../../../assets/img/shared/logo.svg') left/155px no-repeat;
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:480px) {
+    .logo{
+        background: url('../../../assets/img/shared/logo.svg') center/155px no-repeat;
+    }
+    
+}

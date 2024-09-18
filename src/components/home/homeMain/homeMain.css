@@ -83,7 +83,7 @@
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:480px) {
-    #home {
+    #home{
         width: 100vw;
         height: 1689px;
         padding: 46px 0px 0px 0px;
@@ -92,28 +92,23 @@
 
     #homeMainContent {
         width: 100%;
-        height: auto;
-        margin-top: 102px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        border: solid 1px red;
+        margin-top: 80px;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
     }
 
     #homeMainContent-text {
-        width: 540px;
-        height: 388px;
-        display: flex;
+        width: 327px;
+        height: 378px;
         flex-direction: column;
-        align-items: flex-start;
-        border: solid 1px red;
+        text-align: center;
     }
 
     #homeMainContent-text h1 {
         width: inherit;
         height: 192px;
         margin-bottom: 24px;
+        border: solid 1px red;
     }
 
     #homeMainContent-text p {
