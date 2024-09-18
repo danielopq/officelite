@@ -95,14 +95,12 @@ const Select: React.FC<Props> = ({ id, initialPack='Basic Pack', inicialPrice='F
         const currentSelect = select.current;
 
         if (currentSelect) {
-            currentSelect.addEventListener('mouseenter', showSubmenu);
-            currentSelect.addEventListener('mouseleave', showSubmenu);
+            currentSelect.addEventListener('click', showSubmenu);
         }
 
         return () => {
             if (currentSelect) {
                 currentSelect.removeEventListener('mouseenter', showSubmenu);
-                currentSelect.removeEventListener('mouseleave', showSubmenu);
             }
         };
     }, []);
