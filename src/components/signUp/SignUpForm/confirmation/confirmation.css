@@ -44,3 +44,11 @@
 .invisible{
     display: none;
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #confContent{
+        width: 328px;
+    }
+}
