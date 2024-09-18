@@ -1,4 +1,4 @@
-.backCounter{
+.backCounter {
     width: 448px;
     height: 184px;
     display: flex;
@@ -6,25 +6,25 @@
     justify-content: space-between;
 }
 
-.expiringDate{
+.expiringDate {
     height: 48px;
     font: 700 16px/48px 'KumbhSans-Bold';
     letter-spacing: 5px;
 }
 
-.comingLabelDark{
+.comingLabelDark {
     color: white;
 }
 
-.comingLabelLight{
+.comingLabelLight {
     color: var(--dark-blue-med);
 }
 
-.dateLabel{
+.dateLabel {
     color: var(--dark-purple);
 }
 
-.counter{
+.counter {
     width: inherit;
     height: 128px;
     display: flex;
@@ -32,7 +32,7 @@
     justify-content: space-between;
 }
 
-.lapse{
+.lapse {
     width: 100px;
     height: inherit;
     display: flex;
@@ -42,30 +42,30 @@
     padding-top: 16px;
 }
 
-.lapseDark{
+.lapseDark {
     background-color: var(--dark-blue-med);
 }
 
-.lapseLight{
-    background-color: rgba(81,117,255,0.15);
+.lapseLight {
+    background-color: rgba(81, 117, 255, 0.15);
 }
 
-.lapseNumber{
-    height:64px ;
+.lapseNumber {
+    height: 64px;
     display: inline-block;
     font: 700 56px/64px 'KumbhSans-Bold';
 }
 
-.lapseNumberDark{
+.lapseNumberDark {
     color: white;
 }
 
-.lapseNumberLight{
+.lapseNumberLight {
     color: var(--dark-purple);
 }
 
-.lapseType{
-    height:64px ;
+.lapseType {
+    height: 64px;
     display: inline-block;
     font: 700 16px/28px 'KumbhSans-Bold';
     margin-top: 2px;
@@ -75,11 +75,42 @@
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .expiringDate{
+    .expiringDate {
         text-align: center;
     }
 }
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .backCounter {
+        width: 328px;
+        height: 158px;
+        align-content: center;
+    }
+
+    .expiringDate {
+        text-align: center;
+    }
+
+    .counter {
+        height: 92px;
+    }
+
+    .lapse {
+        width: 72px;
+        border-radius: 6px;
+        padding-top: 11px;
+    }
+
+    .lapseNumber {
+        height: 49px;
+        font: 700 32px/48px 'KumbhSans-Bold';
+    }
+
+    .lapseType {
+        height: 28px;
+        font: 700 12px/28px 'KumbhSans-Bold';
+        margin-top: 0px;
+    }
+}
