@@ -82,4 +82,49 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    #home {
+        width: 100vw;
+        height: 1689px;
+        padding: 46px 0px 0px 0px;
+        background: #FAFAFA url('../../../assets/img/home/bg-pattern-header.svg') 50% -170px/458px no-repeat;
+    }
+
+    #homeMainContent {
+        width: 100%;
+        height: auto;
+        margin-top: 102px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: solid 1px red;
+    }
+
+    #homeMainContent-text {
+        width: 540px;
+        height: 388px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: solid 1px red;
+    }
+
+    #homeMainContent-text h1 {
+        width: inherit;
+        height: 192px;
+        margin-bottom: 24px;
+    }
+
+    #homeMainContent-text p {
+        width: inherit;
+        height: 84px;
+        margin-bottom: 32px;
+    }
+
+    #homeMainContent-img {
+        width: 475px;
+        height: 531px;
+        background: url('../../../assets/img/home/illustration-charts.svg') center/475px no-repeat;
+    }
+}

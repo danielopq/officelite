@@ -11,3 +11,15 @@
 #signUpForm button{
     margin-top: 24px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #signUpForm{
+        margin: -283px auto 0px auto;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:480px) {}

@@ -22,5 +22,9 @@
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:480px) {
-
+    #homeFooter{
+        width: 100vw;
+        height: 1248px;
+        background: var(--darkest-grey) url('../../../assets/img/home/bg-pattern-footer.svg') 50% 332px/850px no-repeat;
+    } 
 }
