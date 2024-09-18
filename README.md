@@ -40,7 +40,7 @@ In summary, the project combines modern tools and technologies to deliver a perf
 
 ### Links
 
-- Live Site URL: [https://danielmartinez.co.uk/crowdfunding]
+- Live Site URL: [https://danielmartinez-officelite.netlify.app]
 
 ## My process
 
