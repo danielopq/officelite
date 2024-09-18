@@ -26,8 +26,7 @@
 
 #signUpMainContent p{
     height: 84px;
-    margin-top: 24px;
-    margin-bottom: 40px;
+    margin: 24px 0px 40px;
 }
 
 #mainForm{
@@ -80,4 +79,40 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:767px) {
+    #signUp{
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    #signUpMainContent{
+        height: 916px;
+        width: 327px;
+        height: inherit;
+        padding: 46px 0px 0px 0px;
+        
+    }
+    
+    #signUpMainContent > *{
+        width: 327px;
+        text-align: center;
+    }
+    
+    #signUpMainContent h1{
+        height: 130px;
+        margin-top: 80px;
+    }
+    
+    #signUpMainContent p{
+        height: 84px;
+        margin: 16px 0px 64px;
+    }
+    
+    #mainForm{
+        width: 100vw;
+        height: 320px;
+        background: var(--darkest-grey) url('../../assets/img/sign-up/bg-pattern-side.svg') 50% -408px/1202px no-repeat;
+        border: solid 1px red;
+    }
+}
