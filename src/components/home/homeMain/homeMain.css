@@ -92,34 +92,36 @@
 
     #homeMainContent {
         width: 100%;
+        height: 634px;
         margin-top: 80px;
         flex-direction: column-reverse;
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
 
     #homeMainContent-text {
         width: 327px;
         height: 378px;
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        margin-top: 64px;
     }
 
     #homeMainContent-text h1 {
         width: inherit;
-        height: 192px;
-        margin-bottom: 24px;
-        border: solid 1px red;
+        height: 144px;
+        margin-top: 0px;
     }
 
     #homeMainContent-text p {
         width: inherit;
-        height: 84px;
-        margin-bottom: 32px;
+        height: 130px;
+        margin-bottom: 24px;
     }
 
     #homeMainContent-img {
-        width: 475px;
-        height: 531px;
-        background: url('../../../assets/img/home/illustration-charts.svg') center/475px no-repeat;
+        width: 171px;
+        height: 192px;
+        background: url('../../../assets/img/home/illustration-charts.svg') center/171px no-repeat;
     }
 }
