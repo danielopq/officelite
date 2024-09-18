@@ -113,6 +113,5 @@
         width: 100vw;
         height: 320px;
         background: var(--darkest-grey) url('../../assets/img/sign-up/bg-pattern-side.svg') 50% -408px/1202px no-repeat;
-        border: solid 1px red;
     }
 }
