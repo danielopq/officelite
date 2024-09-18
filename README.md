@@ -19,19 +19,23 @@ The website is built using modern web technologies, including React (with Vite) 
 
 Key features include:
 
-    * Responsive layout that adapts fluidly to different screen sizes, providing a user-friendly experience on desktops, tablets, and smartphones.
-    * Cross-device compatibility, ensuring the platform works seamlessly on various operating systems and browsers.
-    * Efficient state management using React’s component architecture, allowing for smooth interactions and dynamic updates.
-    * Optimized CSS for consistent styling, using either CSS modules or pre-processors to ensure maintainability and scalability.
-    * TypeScript integration for improved code reliability, catching potential errors during development and improving overall maintainability.
+    - Responsive layout that adapts fluidly to different screen sizes, providing a user-friendly experience on desktops, tablets, and smartphones.
+    - Cross-device compatibility, ensuring the platform works seamlessly on various operating systems and browsers.
+    - Efficient state management using React’s component architecture, allowing for smooth interactions and dynamic updates.
+    - Optimized CSS for consistent styling, using either CSS modules or pre-processors to ensure maintainability and scalability.
+    - TypeScript integration for improved code reliability, catching potential errors during development and improving overall maintainability.
 
 In summary, the project combines modern tools and technologies to deliver a performant, responsive, and scalable frontend for a collaboration platform that enhances user experience across all devices.
 
 ### Screenshot
 
-- Desktop version: [https://github.com/danielopq/officelite]
-- Tablet version: [https://github.com/danielopq/officelite]
-- Mobile version: [https://github.com/danielopq/officelite]
+- Home desktop version: [https://github.com/danielopq/officelite/blob/main/screenshots/home-desktop.png]
+- Home tablet version: [https://github.com/danielopq/officelite/blob/main/screenshots/home-tablet.png]
+- Home mobile version: [https://github.com/danielopq/officelite/blob/main/screenshots/home-mobile.png]
+
+- Sign up desktop version: [https://github.com/danielopq/officelite/blob/main/screenshots/signUp-desktop.png]
+- Sign up tablet version: [https://github.com/danielopq/officelite/blob/main/screenshots/signUp-tablet.png]
+- Sign up mobile version: [https://github.com/danielopq/officelite/blob/main/screenshots/signUp-mobile.png]
 
 
 ### Links
@@ -46,9 +50,9 @@ The mobile and tablet versions were implemented using CSS media queries, allowin
 
 Key aspects of the process included:
 
-    * Mobile-first approach for optimizing performance and usability on smaller screens before scaling up to larger devices.
-    * Responsive layouts that dynamically adjust content and visuals, ensuring a clean and intuitive user interface on both tablets and smartphones.
-    * Testing and optimization across multiple devices and browsers to ensure cross-platform compatibility and a smooth user experience on all devices.
+    - Mobile-first approach for optimizing performance and usability on smaller screens before scaling up to larger devices.
+    - Responsive layouts that dynamically adjust content and visuals, ensuring a clean and intuitive user interface on both tablets and smartphones.
+    - Testing and optimization across multiple devices and browsers to ensure cross-platform compatibility and a smooth user experience on all devices.
 
 ### Built with
 
