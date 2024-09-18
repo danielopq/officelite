@@ -82,7 +82,7 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
     .backCounter {
         width: 328px;
         height: 158px;
