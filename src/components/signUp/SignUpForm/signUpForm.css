@@ -22,7 +22,7 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
     #signUpForm{
         width: 327px;
         height: 465px;
@@ -31,6 +31,6 @@
     }
     
     #signUpForm button{
-        margin-top: 40px;
+        margin-top: 16px;
     }
 }
