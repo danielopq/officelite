@@ -92,3 +92,15 @@ button {
     font: 400 16px/26px 'KumbhSans-Regular';
   }
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:480px) {
+  h1 {
+    font: 700 40px/48px 'KumbhSans-Bold';
+  }
+
+  .mainText {
+    font: 400 16px/26px 'KumbhSans-Regular';
+  }
+}
