@@ -56,3 +56,11 @@
 #basic,#pro{
     border-bottom: solid 1px var(--light-grey);
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    .submenu{
+        width: 328px;
+    }
+}
