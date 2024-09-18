@@ -138,4 +138,17 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    #plans {
+        width: 328px;
+        height: 1588px;
+        margin-top: -794px;
+        flex-direction: column;
+    }
+    
+    .planFrame {
+        width: 327px;
+        height: 508px;
+        padding-top: 32px;
+    }
+}
