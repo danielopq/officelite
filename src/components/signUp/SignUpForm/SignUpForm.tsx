@@ -44,7 +44,14 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ selectedPack="Basic Pack", sele
      */
     const displayConfirmation = () => {
         setShowConfirmation(!showConfirmation);
+    }
+
+    /**
+     * Submits the form
+     */
+    const submitForm = () =>{
         formRef.current?.submit();
+        displayConfirmation();
     }
 
     /**
@@ -74,7 +81,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ selectedPack="Basic Pack", sele
 
     return (
         <>
-            <Confirmation showConfirmation={showConfirmation} displayConfirmation={displayConfirmation} />
+            <Confirmation showConfirmation={showConfirmation} submitForm={submitForm} />
             <div id="signUpForm">
                 <form id="getStartedForm" onSubmit={handleSubmit} ref={formRef}>
                     <TextField id='name' error={validName} value={nameValue} placeholder="Name" onChange={handleInputChange} />

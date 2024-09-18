@@ -5,10 +5,10 @@ import DefaultButton from '../../../commons/defaultButton/DefaultButton';
 
 type confirmationProps = {
     showConfirmation: boolean;
-    displayConfirmation: ()=>void;
+    submitForm: ()=>void;
 }
 
-const Confirmation : React.FC<confirmationProps> = ({showConfirmation,displayConfirmation}) =>{
+const Confirmation : React.FC<confirmationProps> = ({showConfirmation,submitForm}) =>{
     return(
         <div id="confBackground" className={showConfirmation ? 'visible' : 'invisible' }>
             <div id="confContent">
@@ -18,7 +18,7 @@ const Confirmation : React.FC<confirmationProps> = ({showConfirmation,displayCon
                 <p id="confThanks">
                     Thanks.
                 </p>
-                <DefaultButton buttonType='accept' onButtonClick={displayConfirmation}>Accept</DefaultButton>
+                <DefaultButton buttonType='accept' onButtonClick={submitForm}>Accept</DefaultButton>
             </div>
         </div>
     )
