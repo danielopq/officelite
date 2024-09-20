@@ -74,7 +74,7 @@
 
 /*############################## TABLET VERSION ##############################*/
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .expiringDate {
         text-align: center;
     }
@@ -82,7 +82,7 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .backCounter {
         width: 328px;
         height: 158px;

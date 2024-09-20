@@ -29,7 +29,7 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     #footerBottom{
         width: 328px;
         height: 254px;

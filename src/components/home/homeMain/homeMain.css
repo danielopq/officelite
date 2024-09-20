@@ -12,13 +12,11 @@
     margin-top: 102px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #homeMainContent-text {
     width: 540px;
-    height: 388px;
+    height: 531px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -27,13 +25,14 @@
 #homeMainContent-text h1 {
     width: inherit;
     height: 192px;
-    margin-bottom: 24px;
+    margin: 72px 0px 24px 0px;
 }
 
 #homeMainContent-text p {
     width: inherit;
     height: 84px;
     margin-bottom: 32px;
+    padding-right: 5px;
 }
 
 #homeMainContent-img {
@@ -44,7 +43,7 @@
 
 /*############################## TABLET VERSION ##############################*/
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     #home {
         width: 100vw;
         height: 1196px;
@@ -65,12 +64,14 @@
 
     #homeMainContent-text h1 {
         height: 144px;
+        margin: 0px 0px 24px 0px;
     }
 
     #homeMainContent-text p {
         width: inherit;
         height: 104px;
         margin-bottom: 24px;
+        padding-right: 0px;
     }
 
     #homeMainContent-img {
@@ -82,7 +83,7 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     #home{
         width: 100vw;
         height: 1689px;
@@ -96,6 +97,7 @@
         margin-top: 80px;
         flex-direction: column-reverse;
         justify-content: flex-end;
+        align-items: center;
     }
 
     #homeMainContent-text {
@@ -117,6 +119,7 @@
         width: inherit;
         height: 130px;
         margin-bottom: 24px;
+        padding-right: 0px;
     }
 
     #homeMainContent-img {

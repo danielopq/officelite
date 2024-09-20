@@ -1,0 +1,18 @@
+// vite.config.ts
+import { defineConfig } from "file:///C:/Users/danie/Dropbox/Proyectos/Officelite/node_modules/vite/dist/node/index.js";
+import react from "file:///C:/Users/danie/Dropbox/Proyectos/Officelite/node_modules/@vitejs/plugin-react/dist/index.mjs";
+var vite_config_default = defineConfig({
+  plugins: [react()],
+  server: {
+    host: "0.0.0.0",
+    // Permite el acceso desde la red local
+    port: 3e3,
+    // Puedes cambiar este puerto si lo necesitas
+    strictPort: true
+    // Si el puerto 3000 está ocupado, no intentará otro
+  }
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJDOlxcXFxVc2Vyc1xcXFxkYW5pZVxcXFxEcm9wYm94XFxcXFByb3llY3Rvc1xcXFxPZmZpY2VsaXRlXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ZpbGVuYW1lID0gXCJDOlxcXFxVc2Vyc1xcXFxkYW5pZVxcXFxEcm9wYm94XFxcXFByb3llY3Rvc1xcXFxPZmZpY2VsaXRlXFxcXHZpdGUuY29uZmlnLnRzXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ltcG9ydF9tZXRhX3VybCA9IFwiZmlsZTovLy9DOi9Vc2Vycy9kYW5pZS9Ecm9wYm94L1Byb3llY3Rvcy9PZmZpY2VsaXRlL3ZpdGUuY29uZmlnLnRzXCI7aW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSAndml0ZSc7XG5pbXBvcnQgcmVhY3QgZnJvbSAnQHZpdGVqcy9wbHVnaW4tcmVhY3QnO1xuXG4vLyBodHRwczovL3ZpdGVqcy5kZXYvY29uZmlnL1xuZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHtcbiAgcGx1Z2luczogW3JlYWN0KCldLFxuICBzZXJ2ZXI6IHtcbiAgICBob3N0OiAnMC4wLjAuMCcsICAvLyBQZXJtaXRlIGVsIGFjY2VzbyBkZXNkZSBsYSByZWQgbG9jYWxcbiAgICBwb3J0OiAzMDAwLCAgICAgICAvLyBQdWVkZXMgY2FtYmlhciBlc3RlIHB1ZXJ0byBzaSBsbyBuZWNlc2l0YXNcbiAgICBzdHJpY3RQb3J0OiB0cnVlLCAvLyBTaSBlbCBwdWVydG8gMzAwMCBlc3RcdTAwRTEgb2N1cGFkbywgbm8gaW50ZW50YXJcdTAwRTEgb3Ryb1xuICB9LFxufSk7Il0sCiAgIm1hcHBpbmdzIjogIjtBQUErVCxTQUFTLG9CQUFvQjtBQUM1VixPQUFPLFdBQVc7QUFHbEIsSUFBTyxzQkFBUSxhQUFhO0FBQUEsRUFDMUIsU0FBUyxDQUFDLE1BQU0sQ0FBQztBQUFBLEVBQ2pCLFFBQVE7QUFBQSxJQUNOLE1BQU07QUFBQTtBQUFBLElBQ04sTUFBTTtBQUFBO0FBQUEsSUFDTixZQUFZO0FBQUE7QUFBQSxFQUNkO0FBQ0YsQ0FBQzsiLAogICJuYW1lcyI6IFtdCn0K
