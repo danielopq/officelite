@@ -40,6 +40,7 @@
 #homeMainContent-text button {
     margin-bottom: 71px;
 }
+
 #homeMainContent-img {
     width: 475px;
     height: 531px;
@@ -69,7 +70,7 @@
 
     #homeMainContent-text h1 {
         height: 144px;
-        margin: 0px 0px 24px 0px;
+        margin-bottom: 24px;
     }
 
     #homeMainContent-text p {
@@ -77,6 +78,10 @@
         height: 104px;
         margin-bottom: 24px;
         padding-right: 0px;
+    }
+
+    #homeMainContent-text button {
+        margin-bottom: 0px;
     }
 
     #homeMainContent-img {
@@ -127,6 +132,10 @@
         padding-right: 0px;
     }
 
+    #homeMainContent-text button {
+        margin-bottom: 0px;
+    }
+    
     #homeMainContent-img {
         width: 171px;
         height: 192px;
