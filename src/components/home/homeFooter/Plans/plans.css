@@ -18,6 +18,13 @@
     color: var(--light-grey);
 }
 
+
+
+#basicPlan .planHeader,
+#ultimatePlan .planHeader {
+    color: var(--dark-blue-med);
+}
+
 #basicPlan .planFeature,
 #ultimatePlan .planFeature {
     color: var(--light-grey);
