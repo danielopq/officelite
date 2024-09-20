@@ -1,9 +1,8 @@
 .backCounter {
     width: 448px;
-    height: 184px;
+    height: 176px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .expiringDate {
@@ -54,6 +53,7 @@
     height: 64px;
     display: inline-block;
     font: 700 56px/64px 'KumbhSans-Bold';
+    letter-spacing: 2px;
 }
 
 .lapseNumberDark {
@@ -69,7 +69,7 @@
     display: inline-block;
     font: 700 16px/28px 'KumbhSans-Bold';
     margin-top: 2px;
-    color: var(--light-grey)
+    color: #898ea5;
 }
 
 /*############################## TABLET VERSION ##############################*/
