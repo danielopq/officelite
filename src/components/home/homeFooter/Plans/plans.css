@@ -15,7 +15,7 @@
 #basicPlan,
 #ultimatePlan {
     background-color: white;
-    color: var(--dark-blue-med);
+    color: var(--light-grey);
 }
 
 #basicPlan .planFeature,
@@ -54,13 +54,13 @@
 .planPrice {
     height: 64px;
     font: 700 56px/64px 'KumbhSans-Bold';
-    margin-top: 40px;
+    margin-top: 37px;
 }
 
 .userLimit {
     height: 28px;
     font: 400 16px/28px 'KumbhSans-Regular';
-    margin: 8px 0px 56px 0px;
+    margin: 11px 0px 56px 0px;
 }
 
 .feature {

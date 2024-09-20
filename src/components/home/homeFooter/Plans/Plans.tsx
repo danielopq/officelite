@@ -37,7 +37,7 @@ const Plans = () => {
         <div id="plans">
             <div id="basicPlan" className='planFrame'>
                 <div className='planDescription'>
-                    <div className='planMainDescription'>
+                    <div>
                         <p className='planName'>Basic</p>
                         <p className='planPrice'>Free</p>
                         <p className='userLimit'>Up to 5 users for free</p>
@@ -52,7 +52,7 @@ const Plans = () => {
             </div>
             <div id="proPlan" className='planFrame'>
                 <div className='planDescription'>
-                    <div className='planMainDescription'>
+                    <div>
                         <p className='planName'>Pro</p>
                         <p className='planPrice'>$9.99</p>
                         <p className='userLimit'>Per user, billed monthly</p>
@@ -67,7 +67,7 @@ const Plans = () => {
             </div>
             <div id="ultimatePlan" className='planFrame'>
                 <div className='planDescription'>
-                    <div className='planMainDescription'>
+                    <div>
                         <p className='planName'>Ultimate</p>
                         <p className='planPrice'>$19.99</p>
                         <p className='userLimit'>Per user, billed monthly</p>
