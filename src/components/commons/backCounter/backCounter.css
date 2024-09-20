@@ -7,7 +7,7 @@
 
 .expiringDate {
     height: 48px;
-    font: 700 16px/48px 'KumbhSans-Bold';
+    font: 700 16px/45px 'KumbhSans-Bold';
     letter-spacing: 5px;
 }
 
@@ -52,8 +52,8 @@
 .lapseNumber {
     height: 64px;
     display: inline-block;
-    font: 700 56px/64px 'KumbhSans-Bold';
-    letter-spacing: 2px;
+    font: 700 56px/67px 'KumbhSans-Bold';
+    letter-spacing: 4px;
 }
 
 .lapseNumberDark {
@@ -68,7 +68,7 @@
     height: 64px;
     display: inline-block;
     font: 700 16px/28px 'KumbhSans-Bold';
-    margin-top: 2px;
+    margin-top: 5px;
     color: #898ea5;
 }
 
