@@ -28,7 +28,7 @@
 #homeMainContent-text h1 {
     width: inherit;
     height: 192px;
-    margin: 0px 0px 24px 0px;
+    margin-bottom: 30px;
 }
 
 #homeMainContent-text p {
