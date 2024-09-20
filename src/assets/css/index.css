@@ -67,6 +67,7 @@ button {
   border-radius: 28px;
   cursor: pointer;
   font: 700 16px/28px 'KumbhSans-Bold';
+  padding-bottom: 3px;
 }
 
 .mainText {
