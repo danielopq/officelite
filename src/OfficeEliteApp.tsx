@@ -3,7 +3,7 @@ import SignUp from './components/signUp/SignUp';
 import './assets/css/index.css';
 import { Route, Routes } from 'react-router-dom';
 
-const OfficeEliteApp = () => {
+const OfficeEliteApp:React.FC = () => {
     return (
         <Routes>
             <Route path="/" element={<Home />} />

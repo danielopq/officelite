@@ -2,7 +2,7 @@
 
 import './logo.css'
 
-const Logo = () =>{
+const Logo:React.FC = () =>{
     return(
         <div className="logo"></div>
     )

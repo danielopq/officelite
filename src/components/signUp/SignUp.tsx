@@ -12,7 +12,7 @@ type selectPlaninfo = {
 }
 
 
-const SignUp = () => {
+const SignUp:React.FC = () => {
     const location = useLocation();
     const selectPlan = (location.state as selectPlaninfo) || {
         selectedPack: "Basic Pack",  // Valor por defecto para `selectedPack`
