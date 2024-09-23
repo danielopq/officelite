@@ -50,7 +50,7 @@ const BackCounter: React.FC<Props> = ({ skinTheme }) => {
     const currentDate: Date = new Date();
     const expiringDate: Date = new Date(currentDate);
     expiringDate.setDate(expiringDate.getDate() + 43);
-    expiringDate.setHours(expiringDate.getHours() + 17);
+    expiringDate.setHours(expiringDate.getHours() + 12);
     expiringDate.setMinutes(expiringDate.getMinutes() + 18);
     expiringDate.setSeconds(expiringDate.getSeconds() + 23);
 

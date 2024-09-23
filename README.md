@@ -17,6 +17,10 @@ This project involves the development of a fully responsive frontend for a colla
 
 The website is built using modern web technologies, including React (with Vite) for a fast and modular JavaScript framework, HTML for structured content, CSS for flexible styling, and TypeScript to enhance code quality with static typing. Special attention was given to performance optimization, ensuring that the site loads efficiently across devices, and adheres to best practices for mobile-first development.
 
+The sign-up form is controlled to ensure proper data validation and to prevent any potential formatting errors. Additionally, the select dropdown has been customized to enhance the user experience by creating a more visually appealing and interactive interface.
+
+A countdown timer displaying the remaining time until the product release has been added to the website. This feature helps create anticipation and keeps users informed about the exact moment the product will become available.
+
 Key features include:
 
   - Responsive layout that adapts fluidly to different screen sizes, providing a user-friendly experience on desktops, tablets, and smartphones.
