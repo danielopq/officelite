@@ -54,7 +54,7 @@ The mobile and tablet versions were implemented using CSS media queries, allowin
 
 Key aspects of the process included:
 
-  - Mobile-first approach for optimizing performance and usability on smaller screens before scaling up to larger devices.
+  - Desktop-first approach for optimizing performance and usability on larger screens before scaling down to smaller devices.
   - Responsive layouts that dynamically adjust content and visuals, ensuring a clean and intuitive user interface on both tablets and smartphones.
   - Testing and optimization across multiple devices and browsers to ensure cross-platform compatibility and a smooth user experience on all devices.
 
